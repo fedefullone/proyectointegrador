@@ -3,6 +3,9 @@
   <li>Grupo 6 </li>
   <li>Federico Fullone, Antonia Reynal, Tomas Fontana </li>
   <li>Sitio web sobre películas y series </li>
-  </ul>
+  <li> Color fondo: HEX #313940 RGB 49, 57, 64 </li>
+  <li> Color secundario: </li>
+  
+</ul>
   
 
