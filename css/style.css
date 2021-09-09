@@ -1,0 +1,14 @@
+.body-index {
+    background-color: rgb(49, 57, 64);
+}
+#logo {
+   display: flex;
+   justify-content: left;
+   height: 100px;
+
+}
+#navegacion, .a-navegacion {
+    text-decoration: none;
+    color: white;
+    font-family: 'Urbanist', sans-serif;
+}
