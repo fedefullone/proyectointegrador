@@ -1,14 +1,34 @@
 .body-index {
     background-color: rgb(49, 57, 64);
 }
-#logo {
+
+.header-index, footer {
+    background-color: rgb(40, 46, 51);
+}
+
+.menu-index {
    display: flex;
    justify-content: left;
    height: 100px;
+   width: 100%;
+   margin: 0px;
 
 }
-#navegacion, .a-navegacion {
+.ul-header-index, .a-header-index, .li-header-index{
     text-decoration: none;
     color: white;
     font-family: 'Urbanist', sans-serif;
+    list-style: none;
+    display: inline;
+    margin: 20px;
+    text-transform: uppercase;
+  
+
+
 }
+
+form {
+    display: inline;
+}
+
+
