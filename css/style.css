@@ -22,8 +22,6 @@
     display: inline;
     margin: 20px;
     text-transform: uppercase;
-  
-
 
 }
 
@@ -31,4 +29,18 @@ form {
     display: inline;
 }
 
+.h2-titulos {
+    font-family: 'Urbanist', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold ;
+    color: white;
+}
 
+
+.listados {
+    display: flex inline;
+}
+
+.img-peliculas {
+    
+}
