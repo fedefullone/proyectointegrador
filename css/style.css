@@ -1,6 +1,9 @@
+/*Especificaciones body*/
+
 .body-index {
     background-color: rgb(49, 57, 64);
 }
+/*Comienzo del header*/
 
 .header-index, footer {
     background-color: rgb(40, 46, 51);
@@ -29,6 +32,8 @@ form {
     display: inline;
 }
 
+/*Comienza el main*/
+
 .h2-titulos {
     font-family: 'Urbanist', sans-serif;
     text-transform: uppercase;
@@ -41,6 +46,7 @@ form {
     display: flex inline;
 }
 
-.img-peliculas {
-    
+.portadas{
+weight: 100px;
+height: 200px;
 }
