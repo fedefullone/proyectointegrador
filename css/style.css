@@ -27,16 +27,18 @@
    margin: 0px;
 
 }
+
+
 .ul-header-index, .a-header-index, .li-header-index{
     text-decoration: none;
     color: white;
     font-family: 'Urbanist', sans-serif;
     list-style: none;
-    display: inline;
     margin: 50px;
     text-transform: uppercase;
     text-align: center;
-
+    display: flex;
+    
 }
 
 .formulario-busqueda {
@@ -48,6 +50,7 @@
 max-height: 100px;
 max-width: 200px;
 }
+
 
 
 /*Comienza el main*/
