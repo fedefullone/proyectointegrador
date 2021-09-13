@@ -7,6 +7,11 @@
     background-color: rgb(49, 57, 64);
     margin: 0px;
 }
+
+.body-generos {
+    background-color: rgb(49, 57, 64);
+    margin: 0px;
+}
 /*Comienzo del header*/
 
 .header-index {
@@ -28,8 +33,9 @@
     font-family: 'Urbanist', sans-serif;
     list-style: none;
     display: inline;
-    margin: 20px;
+    margin: 50px;
     text-transform: uppercase;
+    text-align: center;
 
 }
 
@@ -37,9 +43,12 @@
     display: inline;
 }
 
-.img-header {
-    max-width: 200px;
+
+.nav-logo img{
+max-height: 100px;
+max-width: 200px;
 }
+
 
 /*Comienza el main*/
 
@@ -47,7 +56,7 @@
     font-family: 'Urbanist', sans-serif;
     text-transform: uppercase;
     font-weight: bold ;
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 
@@ -59,4 +68,12 @@
 .portadas{
 weight: 100px;
 height: 200px;
+}
+
+.h1-generos {
+    font-family: 'Urbanist', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold ;
+    color: rgb(255, 255, 255);
+    text-align: center;
 }
