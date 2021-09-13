@@ -1,12 +1,17 @@
 /*Especificaciones body*/
+* {
+    box-sizing: border-box;
+}
 
 .body-index {
     background-color: rgb(49, 57, 64);
+    margin: 0px;
 }
 /*Comienzo del header*/
 
-.header-index, footer {
+.header-index {
     background-color: rgb(40, 46, 51);
+    padding: 15px;
 }
 
 .menu-index {
@@ -28,8 +33,12 @@
 
 }
 
-form {
+.formulario-busqueda {
     display: inline;
+}
+
+.img-header {
+    max-width: 200px;
 }
 
 /*Comienza el main*/
@@ -44,6 +53,7 @@ form {
 
 .listados {
     display: flex inline;
+    padding: 16px;
 }
 
 .portadas{
