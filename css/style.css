@@ -69,7 +69,7 @@ max-width: 200px;
 }
 
 .portadas{
-weight: 100px;
+width: 150px;
 height: 200px;
 }
 
@@ -79,4 +79,25 @@ height: 200px;
     font-weight: bold ;
     color: rgb(255, 255, 255);
     text-align: center;
+}
+
+.titulos-peliculas {
+    font-family: 'Urbanist', sans-serif;
+    color: white;
+}
+
+.generos-texto {
+    font-family: 'Urbanist', sans-serif;
+    color: white;
+}
+
+
+.estreno-texto {
+    font-family: 'Urbanist', sans-serif;
+    color: white;
+}
+
+.lista-cartelera {
+    display: flex;
+    justify-content: space-evenly;
 }
