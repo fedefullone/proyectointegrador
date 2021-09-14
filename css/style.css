@@ -22,7 +22,6 @@
 
 .menu-index {
    display: flex;
-   justify-content: left;
    height: 100px;
    width: 100%;
    margin: 0px;
@@ -31,12 +30,11 @@
 
 .ul-header-index {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     padding: 0px;
     margin-top: 0px;
 
 }
-
 
  .a-header-index, .li-header-index{
     text-decoration: none;
@@ -45,6 +43,9 @@
     list-style: none;
     margin: 50px;
     text-transform: uppercase;
+ 
+   
+
 }
 
 .section-header-index {
@@ -57,9 +58,10 @@
 }
 
 
-.nav-logo img{
+.nav-logo img {
 max-height: 100px;
 max-width: 200px;
+margin: left;
 }
 
 
