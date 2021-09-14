@@ -52,6 +52,7 @@
     justify-content: flex-end;
     margin-top: 50px;
     margin-right: 0px;
+    margin-left: 250px;
     
 }
 
@@ -161,14 +162,22 @@ height: 200px;
 .footer-index {
     background-color: rgb(40, 46, 51);
     padding: 15px;
+    position: relative;
 }
 
 .ul-footer {
+    padding-left: 0px;
+    display: flex;
     text-decoration: none;
     list-style: none;
     color: white;
     font-family: 'Urbanist', sans-serif;
-    justify-content: flex-end;
+    justify-content: center;
+    text-align: center;
+    box-sizing: border-box;
+    width: 1489px;
+    align-items: center;
+    
   
 }
 
