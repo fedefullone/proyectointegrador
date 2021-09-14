@@ -22,7 +22,6 @@
 
 .menu-index {
    display: flex;
-   justify-content: left;
    height: 100px;
    width: 100%;
    margin: 0px;
@@ -31,12 +30,11 @@
 
 .ul-header-index {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     padding: 0px;
     margin-top: 0px;
 
 }
-
 
  .a-header-index, .li-header-index{
     text-decoration: none;
@@ -45,6 +43,9 @@
     list-style: none;
     margin: 50px;
     text-transform: uppercase;
+ 
+   
+
 }
 
 .section-header-index {
@@ -57,28 +58,43 @@
 }
 
 
-.nav-logo img{
+.nav-logo img {
 max-height: 100px;
 max-width: 200px;
+margin: left;
 }
 
 
 
 /*Comienza el main*/
 
+.h2-proximamente {
+    font-family: 'Urbanist', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold ;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
 .h2-titulos {
     font-family: 'Urbanist', sans-serif;
     text-transform: uppercase;
     font-weight: bold ;
-    color: rgb(255, 255, 255);
-    background-color: rgb(204, 255, 51, 0.1) ;
-    text-align: center;
+    font-size: 30px;
+    color: rgb(246, 248, 241);
+    margin-left: 15px;
+    margin-bottom: 0px;
+    background-color: rgb(40, 46, 51);
+
+    
 }
 
 
 .listados {
     display: flex inline;
     padding: 16px;
+    margin: 30px;
 }
 
 .portadas{
@@ -122,9 +138,10 @@ height: 200px;
 }
 
 .slider{
-    width: 95%;
+    width: 100%;
     margin: auto;
     overflow: hidden;
+
 }
 
 .slider ul {
@@ -182,3 +199,8 @@ height: 200px;
 }
 
 /* comienzo del css de detail-movie */
+
+.body-detail-movie {
+    background-color: rgb(49, 57, 64);
+    margin: 0px;
+}
