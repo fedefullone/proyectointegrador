@@ -1,3 +1,4 @@
+/* css de index */
 /*Especificaciones body*/
 * {
     box-sizing: border-box;
@@ -119,8 +120,6 @@ height: 200px;
     color: white;
 }
 
-
-
 .slider{
     width: 95%;
     margin: auto;
@@ -172,3 +171,5 @@ height: 200px;
     justify-content: flex-end;
   
 }
+
+/* comienzo del css de detail-movie */
