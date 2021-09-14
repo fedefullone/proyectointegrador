@@ -18,6 +18,7 @@
 .header-index {
     background-color: rgb(40, 46, 51);
     padding: 15px;
+  
 }
 
 .menu-index {
@@ -43,7 +44,7 @@
     list-style: none;
     margin: 50px;
     text-transform: uppercase;
- 
+
    
 
 }
@@ -54,7 +55,8 @@
     margin-top: 50px;
     margin-right: 0px;
     margin-left: 250px;
-    
+
+
 }
 
 
@@ -62,6 +64,8 @@
 max-height: 100px;
 max-width: 200px;
 margin: left;
+
+
 }
 
 
@@ -130,6 +134,7 @@ height: 200px;
     display: flex;
     justify-content: space-around;
     flex-direction: row;
+    
 }
 
 .a-generos {
@@ -138,7 +143,7 @@ height: 200px;
 }
 
 .slider{
-    width: 100%;
+   width: 100%;
     margin: auto;
     overflow: hidden;
 
@@ -147,7 +152,7 @@ height: 200px;
 .slider ul {
     padding: 0;
     display: flex;
-    width: 400%;
+   width: 400%;
     animation: proximas 15s infinite alternate linear;
 
 }
@@ -157,7 +162,7 @@ height: 200px;
 }
 
 .slider img {
-    width: 100%;
+   width: 100%;
     height: 400px;
 }
 @keyframes proximas {
