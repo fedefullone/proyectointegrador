@@ -32,7 +32,8 @@
     display: flex;
     justify-content: space-between;
     padding: 0px;
-    flex-wrap: wrap;
+    margin-top: 0px;
+
 }
 
 
@@ -45,8 +46,11 @@
     text-transform: uppercase;
 }
 
-section {
+.section-header-index {
     display: flex;
+    justify-content: flex-end;
+    margin-top: 50px;
+    margin-right: 0px;
     
 }
 
@@ -122,13 +126,13 @@ height: 200px;
     margin: auto;
     overflow: hidden;
 }
+
 .slider ul {
     padding: 0;
     display: flex;
     width: 400%;
-    
     animation: proximas 15s infinite alternate linear;
-    
+
 }
 .slider li {
     list-style: none;
@@ -151,4 +155,20 @@ height: 200px;
 
     75% {margin-left: -300%;}
     100% {margin-left: -300%;}
+}
+
+/* comienza el footer */
+
+.footer-index {
+    background-color: rgb(40, 46, 51);
+    padding: 15px;
+}
+
+.ul-footer {
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    font-family: 'Urbanist', sans-serif;
+    justify-content: flex-end;
+  
 }
