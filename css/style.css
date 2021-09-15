@@ -205,7 +205,46 @@ height: 200px;
 
 /* comienzo del css de detail-movie */
 
+
+
 .body-detail-movie {
     background-color: rgb(49, 57, 64);
     margin: 0px;
+    font-family: 'Urbanist', sans-serif;
+    color: white;
+}
+.h1-detail-movie {
+    text-align: center;
+    font-weight: bold;
+    margin: 50px;
+}
+
+.justicia-implacable {
+    margin-left: 20px;
+    background-color: rgb(40, 46, 51);
+
+}
+
+.section-detail-movie {
+    display: flex;
+    flex-direction: row;
+    margin: 30px 40px 50px 40px;
+    width: 60%;
+}
+
+.justicia-implacable {
+    font-weight: lighter;
+}
+
+.clase-texto-detail-movie, .a-li-detail-movie {
+    font-weight: 80;
+    color: white;
+}
+
+
+/* comienza el css de detail serie */
+
+.body-detail-serie {
+    background-color: rgb(49, 57, 64);
+    margin: 0px;;
 }
