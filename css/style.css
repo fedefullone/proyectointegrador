@@ -94,6 +94,13 @@ margin: left;
     
 }
 
+.portadas-generos{
+    width: 1300px;
+    height: 500px;
+    display:block;
+    margin:auto;
+
+}
 
 .listados {
     display: flex inline;
@@ -105,14 +112,22 @@ margin: left;
 width: 150px;
 height: 200px;
 }
+.portadas-drama{
+    height: 300px;
+    width: 200px;
+
+}
 
 .h1-generos {
+    text-decoration: none;
     font-family: 'Urbanist', sans-serif;
     text-transform: uppercase;
     font-weight: bold ;
     color: rgb(255, 255, 255);
     text-align: center;
+    
 }
+    
 
 .titulos-peliculas {
     font-family: 'Urbanist', sans-serif;
