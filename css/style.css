@@ -247,4 +247,34 @@ height: 200px;
 .body-detail-serie {
     background-color: rgb(49, 57, 64);
     margin: 0px;;
+    font-family: 'Urbanist', sans-serif;
+    color: white;
 }
+
+.section-detail-serie {
+    display: flex;
+    flex-direction: row;
+    margin: 30px 40px 50px 40px;
+    width: 60%;
+}
+
+.h1-detail-serie {
+    text-align: center;
+    font-weight: bold;
+    margin: 50px;
+}
+
+.la-casa-de-papel {
+    font-weight: lighter;
+    margin-left: 20px;
+    background-color: rgb(40, 46, 51);
+}
+
+.clase-texto-detail-serie, .a-li-detail-serie {
+    font-weight: 80;
+    color: white;
+}
+
+
+
+
