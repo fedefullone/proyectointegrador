@@ -133,6 +133,10 @@ height: 200px;
     font-family: 'Urbanist', sans-serif;
     color: white;
 }
+.a-titulo {
+    text-decoration: none;
+    color: white;
+}
 
 .generos-texto {
     font-family: 'Urbanist', sans-serif;
