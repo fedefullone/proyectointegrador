@@ -255,9 +255,17 @@ height: 200px;
     font-weight: lighter;
 }
 
-.clase-texto-detail-movie, .a-li-detail-movie {
+.clase-texto-detail-movie{
     font-weight: 80;
     color: white;
+}
+
+.a-li-detail-movie {
+    font-weight: 80;
+    color: white;
+    text-decoration: none;
+    list-style: none;
+    
 }
 
 
@@ -292,6 +300,7 @@ height: 200px;
 .clase-texto-detail-serie, .a-li-detail-serie {
     font-weight: 80;
     color: white;
+    text-decoration:none ;
 }
 
 
