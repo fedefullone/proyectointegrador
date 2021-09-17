@@ -18,11 +18,12 @@
 .header-index {
     background-color: rgb(40, 46, 51);
     padding: 15px;
+ 
   
 }
 
 .menu-index {
-   display: flex;
+    display: flex;
    height: 100px;
    width: 100%;
    margin: 0px;
@@ -37,12 +38,16 @@
 
 }
 
+.li-header-index {
+    margin: 20%;
+    justify-content: center;
+}
+
  .a-header-index, .li-header-index{
     text-decoration: none;
     color: white;
     font-family: 'Urbanist', sans-serif;
     list-style: none;
-    margin: 50px;
     text-transform: uppercase;
 
    
