@@ -329,4 +329,23 @@ height: 200px;
     text-decoration: none;
 }
 
+/* comienza el css de favoritos */
+
+.favoritos {
+    background-color: rgb(49, 57, 64);
+    margin: 0px;
+    font-family: 'Urbanist', sans-serif;
+    color: white;
+}
+
+span {
+    display: inline-block;
+    margin: 5%
+}
+
+.img-span {
+    width: 150px;
+    height: 200px;
+    margin: 0px
+}
 
