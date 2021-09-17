@@ -103,7 +103,6 @@ margin: left;
 }
 
 .listados {
-    display: flex inline;
     padding: 16px;
     margin: 30px;
 }
@@ -153,6 +152,7 @@ height: 200px;
     display: flex;
     justify-content: space-around;
     flex-direction: row;
+    flex-wrap: wrap;
     
 }
 
