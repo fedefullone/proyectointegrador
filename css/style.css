@@ -198,6 +198,7 @@ height: 200px;
     100% {margin-left: -300%;}
 }
 
+
 /* comienza el footer */
 
 .footer-index {
@@ -306,3 +307,29 @@ height: 200px;
 
 
 
+/* responsive web css */
+
+@media (min-width: 370px) {
+    
+    section {
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+    .listados {
+        width: 50%;
+        margin: auto
+    
+    }
+
+    .slider{
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+}
