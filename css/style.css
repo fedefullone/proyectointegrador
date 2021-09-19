@@ -8,7 +8,9 @@
     background-color: rgb(49, 57, 64);
     margin: 0px;
 }
-
+.nav-header{
+    width: 100%;
+}
 .body-generos {
     background-color: rgb(49, 57, 64);
     margin: 0px;
@@ -17,61 +19,48 @@
 
 .header-index {
     background-color: rgb(40, 46, 51);
-    padding: 15px;
- 
   
 }
 
 .menu-index {
     display: flex;
-   height: 100px;
-   width: 100%;
-   margin: 0px;
+    height: 100px;
+   
+}
 
+.nav-logo img{
+    height: 100px;
+    width: 100px;
+    margin: left;
 }
 
 .ul-header-index {
     display: flex;
-    justify-content: center;
+    margin: 0px;
     padding: 0px;
-    margin-top: 0px;
-
+    justify-content: space-between;
+    font-family: 'Urbanist', sans-serif;
+    margin-left: 30px;
+    margin-top: 20px;
 }
 
 .li-header-index {
-    margin: 20%;
-    justify-content: center;
+    justify-content: space-evenly;
+    margin: 30px 50px;
 }
-
- .a-header-index, .li-header-index{
+.li-header-index, .a-header-index {
     text-decoration: none;
     color: white;
-    font-family: 'Urbanist', sans-serif;
     list-style: none;
     text-transform: uppercase;
-
-   
-
 }
 
 .section-header-index {
-    display: flex;
     justify-content: flex-end;
-    margin-top: 50px;
-    margin-right: 0px;
-    margin-left: 250px;
-
+    margin: 50px 30px 40px 250px;
 
 }
 
-
-.nav-logo img {
-max-height: 100px;
-max-width: 200px;
-margin: left;
-
-
-}
 
 
 
@@ -91,7 +80,7 @@ margin: left;
     text-transform: uppercase;
     font-weight: bold ;
     font-size: 30px;
-    color: rgb(246, 248, 241);
+    color: white;
     margin-left: 15px;
     margin-bottom: 0px;
     background-color: rgb(40, 46, 51);
@@ -322,6 +311,7 @@ height: 200px;
     color: white;
 
 }
+
 .titulo-resultados {
     font-family: 'Urbanist', sans-serif;
     color: white;
@@ -338,14 +328,26 @@ height: 200px;
     color: white;
 }
 
-span {
-    display: inline-block;
-    margin: 5%
+.section-favoritos {
+    display: flex;
+    margin-left: 30px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+
+}
+
+.h1-favoritos {
+    text-align: center;
+   
+}
+.article-favoritos {
+    padding: 16px;
+    margin: 22px 30px;
 }
 
 .img-span {
-    width: 150px;
-    height: 200px;
-    margin: 0px
+    width: 200px;
+    height: 280px;
+   
 }
 
