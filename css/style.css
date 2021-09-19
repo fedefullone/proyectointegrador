@@ -82,18 +82,17 @@
     font-weight: bold;
     font-size: 30px;
     color: white;
-    margin-left: 15px;
-    margin-bottom: 0px;
+    padding: 5px 0px 5px 15px;
     background-color: rgb(40, 46, 51);
 
     
 }
 
 .portadas-generos{
-    width: 1300px;
+    width: 90%;
     height: 500px;
     display:block;
-    margin:auto;
+    margin: 20px;
 
 }
 
@@ -106,6 +105,7 @@
 width: 150px;
 height: 200px;
 }
+
 .portadas-drama{
     height: 300px;
     width: 200px;
@@ -232,6 +232,7 @@ height: 200px;
     text-align: center;
     font-weight: bold;
     margin: 50px;
+    text-transform: uppercase;
 }
 
 .justicia-implacable {
@@ -285,6 +286,7 @@ height: 200px;
     text-align: center;
     font-weight: bold;
     margin: 50px;
+    text-transform: uppercase;
 }
 
 .la-casa-de-papel {
@@ -299,9 +301,11 @@ height: 200px;
     text-decoration:none ;
 }
 
+
+
 /* Comienza pagina de resultados */
 .resultados {
-    margin-left: 2%;
+    margin: 15px 15px 50px 15px;
     display: flex;
     flex-direction: row;
 }
@@ -320,6 +324,20 @@ height: 200px;
     text-decoration: none;
 }
 
+.resultados-similares {
+    font-family: 'Urbanist', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    background-color:  rgb(40, 46, 51);
+    font-size: 30px;
+}
+
+.imagen-detail-series {
+    height: 368px;
+    width: 270px;
+}
+
 /* comienza el css de favoritos */
 
 .favoritos {
@@ -331,14 +349,14 @@ height: 200px;
 
 .section-favoritos {
     display: flex;
-    margin-left: 30px;
-    margin-right: 10px;
-    margin-bottom: 20px;
+    margin: 40px 10px 20px 40px;
 
 }
 
 .h1-favoritos {
     text-align: center;
+    text-transform: uppercase;
+    margin: 30px;
    
 }
 .article-favoritos {
