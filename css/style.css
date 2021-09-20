@@ -124,28 +124,32 @@ height: 200px;
 /* comienza el footer */
 
 .footer-index {
+    display: flex;
+    flex-wrap: wrap;
     background-color: rgb(40, 46, 51);
     padding: 15px;
     position: relative;
+
+    
 }
 
 .ul-footer {
-    padding-left: 0px;
+
     display: flex;
     text-decoration: none;
     list-style: none;
     color: white;
     font-family: 'Urbanist', sans-serif;
-    justify-content: center;
-    text-align: center;
-    box-sizing: border-box;
-    width: 100%;
-    align-items: center;
-    
+    justify-content: space-between;
+ 
+   
   
 }
+
 .logo {
     width: 10%;
+    
+    
 }
 
 /* comienzo del css de detail-movie */
@@ -231,13 +235,10 @@ height: 200px;
     text-decoration:none ;
     
 }
-
 .imagen-detail-series {
     height: 368px;
     width: 270px;
 }
-
-
 
 /* Comienza pagina de resultados */
 .resultados {
@@ -355,33 +356,62 @@ height: 200px;
 
     /* Comienza el css responsive */
     
-    @media (max-width:420px) {
-section {
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
+@media (max-width:420px) {
+
+
 .listados {
-    width: 49%;
-    margin: auto;
+    width: 48%;
+    margin: 1px;
+    padding: 0px;
 }
-.foto-proximamente {
+.foto-proximamente, .h2-proximamente{
     display: none;
 }
-.h2-proximamente {
-    display: none;
-}
-.menu-index {
-    display: inline;
-}
-.li-header-index {
-    margin: auto;
-}
-.ul-footer {
-    display: inline;
-}
+
 .a-titulo {
-    font-size: 15px;
+    font-size: 12px;
 }
+
+.h2-titulos {
+    font-size: 25px;
+}
+
+.menu li {
+    margin: 2%;
+}
+
+.h1-header {
+    font-size: 25px;
+    margin-left: 15px;
+    
+}
+
+.generos-texto, .a-generos {
+    font-size: 10px;
+}
+.section-favoritos {
+    margin: 0%;
+    justify-content: center;
+}
+.article-favoritos {
+    width: 48%;
+    margin: 0%;
+}
+.img-span {
+    height: 200px;
+}
+
+.h1-favoritos {
+    font-size: 25px;
+    margin-left: 5%;
+}
+
+.listados-generos {
+    width: 48%;
+    margin: 0%;
+}
+
+
     }
 
     
