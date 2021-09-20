@@ -12,59 +12,31 @@
 
 </head>
 <body class="body-generos">
-    <header class="header-index">
-
-        <div class="menu-index">
-
-                <div class="nav-logo">
-                    <a href="index.html">
-                        <img src="img/logo.PNG" alt="logo dhmovies">
-                
-                      </a>
-                </div>
-
-            <nav class="nav-header">
-                <ul class="ul-header-index">
-
-                    <li class="li-header-index">
-                        <a class="a-header-index"href="index.html">Home</a>  
-                    </li>
-
-                     <li class="li-header-index">
-                        <a class="a-header-index"href="generos.html">Géneros</a>  
-                    </li>
-
-                     <li class="li-header-index">
-                        <a class="a-header-index"href="favoritos.html">Favoritos</a>  
-                     </li>
-
-                </ul>
-
-            </nav>
-
-            <section class="section-header-index">
-            
-                <form class="buscador"action="search-results.html">
-
-                    
-                     <input id="buscadoe-id" type="text" name="Buscador" placeholder="Buscador...">
-
-                     <input id="boton-buscar"type="submit" value="Buscar">
-                
-                    </form>
-                 
-             </section>
- 
-  
+    <header class="menu-index">
+        <div class="header-index">
+            <img class="logo" src="img/logo.PNG" alt="Logo dhmovies">
+        <h1 class="h1-header">DH Movies - El mejor sitio de peliculas y series</h1>
         </div>
- 
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Home </a></li>
+                <li><a href="favoritos.html">Favoritos </a></li>
+                <li><a href="generos.html">Generos </a></li>
+            </ul>
+        </nav>
+        <div class="buscador">
+        <form action="search-results.html" method="GET">
+            <input type="text" name="busqueda" placeholder="Buscar...">
+            <input type="submit" value="Buscar">
+        </form>
+        </div>
     </header>
 
 
     <main>
         <h1 class="h1-generos">Géneros</h1>
         <section class="lista-generos">
-            <article class="listados">
+            <article class="listados-generos">
                 <h2 class="h2-titulos-generos">Acción</h2>
                 <div >
                     <a href="detail-accion.html">
@@ -72,7 +44,7 @@
                     </a>
                 </div>
             </article>
-             <article class="listados">
+             <article class="listados-generos">
              <h2 class="h2-titulos-generos" href="detail-terror.html">Terror</h2>
          <div>
             <a href="detail-terror.html">
@@ -80,7 +52,7 @@
             </a>
         </div>
     </article>
-    <article class="listados">
+    <article class="listados-generos">
     <h2 class="h2-titulos-generos">Comedia</h2>
         <div>
             <a href="detail-comedia.html">
@@ -88,7 +60,7 @@
             </a>
         </div>
     </article>
-    <article class="listados">
+    <article class="listados-generos">
         <h2 class="h2-titulos-generos">Drama</h2>
             <div>
                 <a href="detail-drama.html">
