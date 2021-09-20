@@ -11,10 +11,7 @@
 .nav-header{
     width: 100%;
 }
-.body-generos {
-    background-color: rgb(49, 57, 64);
-    margin: 0px;
-}
+
 /*Comienzo del header*/
 
 .header-index {
@@ -83,17 +80,7 @@
     font-size: 30px;
     color: white;
     padding: 5px 0px 5px 15px;
-    background-color: rgb(40, 46, 51);
-
-    
-}
-
-.portadas-generos{
-    width: 90%;
-    height: 500px;
-    display:block;
-    margin: 20px;
-
+    background-color: rgb(40, 46, 51);    
 }
 
 .listados {
@@ -106,23 +93,6 @@ width: 150px;
 height: 200px;
 }
 
-.portadas-drama{
-    height: 300px;
-    width: 200px;
-
-}
-
-.h1-generos {
-    text-decoration: none;
-    font-family: 'Urbanist', sans-serif;
-    text-transform: uppercase;
-    font-weight: bold ;
-    color: rgb(255, 255, 255);
-    text-align: center;
-    
-}
-    
-
 .titulos-peliculas {
     font-family: 'Urbanist', sans-serif;
     color: white;
@@ -131,12 +101,6 @@ height: 200px;
     text-decoration: none;
     color: white;
 }
-
-.generos-texto {
-    font-family: 'Urbanist', sans-serif;
-    color: white;
-}
-
 
 .estreno-texto {
     font-family: 'Urbanist', sans-serif;
@@ -338,6 +302,50 @@ height: 200px;
    
 }
 
-
+/* comienza el css de generos */
     
+.body-generos {
+    background-color: rgb(49, 57, 64);
+    margin: 0px;
+}
 
+.lista-generos {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.h2-titulos-generos {
+    text-align: center;
+    font-family: 'Urbanist', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+    padding: 5px 0px 5px 15px;
+    background-color: rgb(40, 46, 51);
+}
+
+.portadas-generos{
+    width: 300px;
+    height: 500px;
+}
+
+.portadas-drama{
+        height: 300px;
+        width: 200px;
+    }
+
+    .h1-generos {
+        text-decoration: none;
+        font-family: 'Urbanist', sans-serif;
+        text-transform: uppercase;
+        font-weight: bold ;
+        color: rgb(255, 255, 255);
+        text-align: center;
+    }
+
+    .generos-texto {
+        font-family: 'Urbanist', sans-serif;
+        color: white;
+    }
