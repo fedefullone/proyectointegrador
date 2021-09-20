@@ -58,6 +58,9 @@
 
 }
 
+.nav-header{
+    width: 100%;
+}
 
 
 
@@ -349,3 +352,35 @@ height: 200px;
         font-family: 'Urbanist', sans-serif;
         color: white;
     }
+
+    /* Comienza el css responsive */
+    
+    @media (max-width:420px) {
+section {
+    flex-wrap: wrap;
+}
+.listados {
+    width: 50%;
+    margin: auto;
+}
+.foto-proximamente {
+    display: none;
+}
+.h2-proximamente {
+    display: none;
+}
+.menu-index {
+    display: inline;
+}
+.li-header-index {
+    margin: auto;
+}
+.ul-footer {
+    display: inline;
+}
+
+    }
+
+    
+
+    
