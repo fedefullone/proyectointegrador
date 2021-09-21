@@ -23,6 +23,7 @@ header {
     color: white;
     align-self: center;
     margin-right: 25%;
+   
 }
 .menu {
     display: flex;
@@ -254,6 +255,7 @@ flex-direction: row;
 .article-favoritos {
     padding: 16px;
     margin: 22px 30px;
+    width: 15%;
 }
 
 .img-span {
@@ -294,7 +296,7 @@ flex-direction: row;
 .listados-generos {
     padding: 16px;
     margin: 30px;
-    width: 25%;
+    width: 20%;
 }
 
 
@@ -382,11 +384,18 @@ flex-direction: row;
 }
  /*Resultados responsive*/
  .resultados{
-display: block; }
+display: block; 
     }
+
 .article-resultados {
-align-items: center;}
+margin-left: 20%;
+}
 
-    
-
-    
+.resultado-texto {
+    margin-left: 10%;
+    margin-bottom: 10%;
+}
+.titulo-resultados {
+    margin-left: 30%;
+}
+}
