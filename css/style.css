@@ -322,6 +322,7 @@ flex-direction: row;
     margin: 1px;
     padding: 0px;
 }
+
 .foto-proximamente, .h2-proximamente{
     display: none;
 }
@@ -341,12 +342,12 @@ flex-direction: row;
 .h1-header {
     font-size: 25px;
     margin-left: 15px;
-    
 }
 
 .generos-texto, .a-generos {
     font-size: 10px;
 }
+
 /* Favoritos responsive */
 .section-favoritos {
     margin: 0%;
