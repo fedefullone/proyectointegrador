@@ -398,4 +398,30 @@ margin-left: 20%;
 .titulo-resultados {
     margin-left: 30%;
 }
+
+/* responsive detalles peliculas */
+.section-detail-movie {
+    display: block;
+}
+.imagen-detail-movie {
+    width: 90%;
+}
+.article-img {
+    margin-left: 30%;
+}
+.articulo-detail-movie {
+    margin-left: 10%;
+    margin-bottom: 10%;
+}
+
+/* responsive detalles series */
+.imagen-detail-series {
+    width: 90%;
+    height: 230px;
+}
+
+
+
+
+
 }
