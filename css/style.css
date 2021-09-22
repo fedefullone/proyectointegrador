@@ -74,7 +74,8 @@ header {
     font-size: 30px;
     color: white;
     padding: 5px 0px 5px 15px;
-    background-color: rgb(40, 46, 51);    
+    background-color: rgb(40, 46, 51);  
+    width: 100%;  
 }
     
 
@@ -144,6 +145,8 @@ flex-direction: row;
     font-weight: bold;
     margin: 50px;
     text-transform: uppercase;
+   
+   
 }
 
 .section-detail-movie {
@@ -251,6 +254,8 @@ flex-direction: row;
     text-align: center;
     text-transform: uppercase;
     margin: 30px;
+    width: 100%;
+    font-size: 35px;
 }
 .article-favoritos {
     padding: 16px;
