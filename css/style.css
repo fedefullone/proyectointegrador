@@ -82,6 +82,7 @@ header {
 .listados {
     padding: 16px;
     margin: 30px;
+    width: 150px!important;
 }
 
 .portadas{
@@ -98,7 +99,7 @@ height: 200px;
     color: white;
 }
 
-.lista-cartelera {
+.lista-cartelera, .lista-cartelera-series {
     display: flex;
     justify-content: space-around;
     flex-direction: row;
