@@ -99,7 +99,7 @@ height: 200px;
     color: white;
 }
 
-.lista-cartelera, .lista-cartelera-series {
+.lista-cartelera, .lista-cartelera-series, .lista-cartelera-peliculas-vistas {
     display: flex;
     justify-content: space-around;
     flex-direction: row;
