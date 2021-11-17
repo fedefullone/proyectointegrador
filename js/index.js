@@ -55,7 +55,7 @@ window.addEventListener("load", function () {
 
             `<article class="listados">
         <div>
-        <a href="detail-movie.html?id=${data.results[i].id}">
+        <a href="detail-serie.html?id=${data.results[i].id}">
             <img class="portadas"src="https://image.tmdb.org/t/p/w342/${data.results[i].poster_path}"alt="${data.results[i].name}">
         </img>
             </div>
@@ -108,3 +108,24 @@ fetch('https://api.themoviedb.org/3/movie/top_rated?api_key=1caaa22005845643c086
     }
 })
 
+//fetch para proximamente
+
+fetch('https://api.themoviedb.org/3/movie/upcoming?api_key=1caaa22005845643c0863fd9677bc21c&language=en-US&page=1')
+
+.then(function(response){
+    return response.json()
+})
+
+.then(function(data){
+    console.log(data)
+    for(let i=0; i<5; i++){
+        console.log(data.results[i]);
+        document.querySelector('section').innerHTML = `
+            <h2 class="h2-proximamente">Próximamente</h2>
+            <img class="foto-proximamente" src="https://image.tmdb.org/t/p/w342/${data.results[i].poster_path}" alt="${data.results[i].title}">
+        `
+       
+
+
+    }
+})
