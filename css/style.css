@@ -282,7 +282,7 @@ flex-direction: row;
     margin: 0px;
 }
 
-.lista-generos {
+.lista-generos-peliculas, .lista-generos-series {
     display: flex;
     justify-content: space-around;
     flex-direction: row;

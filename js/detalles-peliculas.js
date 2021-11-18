@@ -1,17 +1,18 @@
 let queryStringObj = new URLSearchParams(location.search);
 let id = queryStringObj.get('id');
 
-fetch('https://api.themoviedb.org/3/movie/'+ id +'?api_key=1caaa22005845643c0863fd9677bc21c')
+fetch('https://api.themoviedb.org/3/movie/' + id + '?api_key=1caaa22005845643c0863fd9677bc21c')
 
-.then(function (response) {
-    return response.json();
-})
+    .then(function (response) {
+        return response.json();
+    })
 
 
-.then(function (data) {
-    console.log(data);
-   let infoPeliculas = document.querySelector('section');
-   infoPeliculas.innerHTML = ` <h2 class="h2-titulos">${data.title}</h2>
+    .then(function (data) {
+        console.log(data);
+        let infoPeliculas = document.querySelector('section');
+        infoPeliculas.innerHTML =
+            ` <h2 class="h2-titulos">${data.title}</h2>
     
    <div class="section-detail-movie">
        <article class="article-img">
@@ -31,8 +32,8 @@ fetch('https://api.themoviedb.org/3/movie/'+ id +'?api_key=1caaa22005845643c0863
            
        </article>
 </div>`
-})
+    })
 
-.catch(function(error){
-    console.log('El error fue: ' + error)
-})
+    .catch(function (error) {
+        console.log('El error fue: ' + error)
+    })

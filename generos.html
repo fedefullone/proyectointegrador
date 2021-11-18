@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,15 +8,16 @@
     <title>Géneros - DH Movies</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Urbanist&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist&display=swap" rel="stylesheet">
 
 </head>
+
 <body class="body-generos">
     <header class="menu-index">
         <div class="header-index">
             <img class="logo" src="img/logo.PNG" alt="Logo dhmovies">
-        <h1 class="h1-header">DH Movies - El mejor sitio de peliculas y series</h1>
+            <h1 class="h1-header">DH Movies - El mejor sitio de peliculas y series</h1>
         </div>
         <nav>
             <ul class="menu">
@@ -25,20 +27,21 @@
             </ul>
         </nav>
         <div class="buscador">
-        <form action="search-results.html" method="GET">
-            <input type="text" name="busqueda" placeholder="Buscar...">
-            <input type="submit" value="Buscar">
-        </form>
+            <form action="search-results.html" method="GET">
+                <input type="text" name="busqueda" placeholder="Buscar...">
+                <input type="submit" value="Buscar">
+            </form>
         </div>
     </header>
 
 
     <main>
         <h1 class="h1-generos">Géneros</h1>
-    
-        <section class="lista-generos">
-            </section><!--
-            <h2 class="h2-titulos">Géneros de Peliculas</h2>
+        <h2 class="h2-titulos">Géneros de Peliculas</h2>
+
+        <section class="lista-generos-peliculas">
+        </section>
+        <!--
             <article class="listados-generos">
                 <h2 class="h2-titulos-generos">Acción</h2>
                 <div >
@@ -73,10 +76,12 @@
     </article>
 
 </section>
+-->
 
-
-<section class="lista-generos">
-    <h2 class="h2-titulos">Géneros de Series</h2>
+        <section class="lista-generos-series">
+            <h2 class="h2-titulos">Géneros de Series</h2>
+        </section>
+        <!--
     <article class="listados-generos">
         <h2 class="h2-titulos-generos">Acción</h2>
         <div >
@@ -112,20 +117,22 @@
 
 </section>
 -->
-</main>
+    </main>
 
-<footer class="footer-index">
-    <div class="nombres-footer">
-        <div class="nav-logo">
-            <a href="index.html">
-                <img class= "logo-db" src="img/logodatabase.svg" alt="logo dhmovies"></a>
+    <footer class="footer-index">
+        <div class="nombres-footer">
+            <div class="nav-logo">
+                <a href="index.html">
+                    <img class="logo-db" src="img/logodatabase.svg" alt="logo dhmovies"></a>
+            </div>
+            <div id="texto-footer">
+                <p class="generos-texto"> Federico Fullone, Tomas Fontana, Antonia Reynal.</p>
+            </div>
+
         </div>
-        <div id="texto-footer">
-<p class="generos-texto"> Federico Fullone, Tomas Fontana, Antonia Reynal.</p></div>
-     
-    </div>
 
-</footer>
-<script src="js/generos.js"></script>
+    </footer>
+    <script src="js/generos.js"></script>
 </body>
+
 </html>

@@ -1,5 +1,3 @@
-let queryStribObjG = new URLSearchParams(location.search);
-let id = queryStribObjG('id');
-console.log('id');
+let queryStringObj = new URLSearchParams(location.search);
+let id = queryStringObj.get('id');
 
-fetch('')
