@@ -20,13 +20,13 @@ fetch('https://api.themoviedb.org/3/movie/' + id + '?api_key=1caaa22005845643c08
        </article>
        <article class="articulo-detail-movie">
            <ul class="clase-texto-detail-movie">
-              <li>Califacion: ${data.vote_average}</li>
-              <li>Estreno: ${data.release_date}
-              <li>Duración: ${data.runtime}</li>
+              <li>Calification: ${data.vote_average}</li>
+              <li>Release date: ${data.release_date}
+              <li>Duration: ${data.runtime} minutes</li>
               <li>
                    <a class="a-li-detail-serie"href="detail-accion.html">Género: Acción</a>
                </li>
-              <li>Sinopsis: ${data.overview}</li>
+              <li>Synopsis: ${data.overview}</li>
               <li><a class="a-li-detail-movie" href="favoritos.html">♥</a></li>
                </ul>
            

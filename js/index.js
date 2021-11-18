@@ -18,7 +18,8 @@ window.addEventListener("load", function () {
             for (let i = 0; i < 5; i++) {
                 console.log(data.results[i]);
 
-                document.querySelector(".lista-cartelera").innerHTML +=
+            let peliculasPopulares = document.querySelector(".lista-cartelera")
+            peliculasPopulares.innerHTML +=
 
                     `<article class="listados">
             <div>
@@ -29,7 +30,7 @@ window.addEventListener("load", function () {
 
         <h3 class="titulos-peliculas"><a href="detail-movie.html?id=${data.results[i].id}" class="a-titulo">${data.results[i].title}</a></h3>
         <p class="generos-texto"><a href="detail-movie.html?id=${data.results[i].id}" class="a-titulo">${data.results[i].release_date}</a></p>
-        <p class="generos-texto"><a href="detail-movie.html?id=${data.results[i].id}" class="a-titulo"> Ver más ✓ </a>
+        <p class="generos-texto"><a href="detail-movie.html?id=${data.results[i].id}" class="a-titulo"> See more ✓ </a>
 
 
     </article> `
@@ -51,7 +52,8 @@ window.addEventListener("load", function () {
             for (let i = 0; i < 5; i++) {
                 console.log(data.results[i]);
 
-                document.querySelector(".lista-cartelera-series").innerHTML +=
+                let seriesPopulares = document.querySelector(".lista-cartelera-series")
+                seriesPopulares.innerHTML +=
 
                     `<article class="listados">
         <div>
@@ -64,7 +66,7 @@ window.addEventListener("load", function () {
 
         <p class="generos-texto"><a href="detail-serie.html?id=${data.results[i].id}" class="a-titulo">${data.results[i].first_air_date}</a></p>
 
-    <p class="generos-texto"><a href="detail-serie.html?id=${data.results[i].id}" class="a-titulo"> Ver más ✓ </a></p>
+    <p class="generos-texto"><a href="detail-serie.html?id=${data.results[i].id}" class="a-titulo"> See more ✓ </a></p>
 
 
 </article> `
@@ -91,7 +93,8 @@ fetch('https://api.themoviedb.org/3/movie/top_rated?api_key=1caaa22005845643c086
         for (let i = 0; i < 5; i++) {
             console.log(data.results[i]);
 
-            document.querySelector(".lista-cartelera-peliculas-vistas").innerHTML +=
+            let peliculasMasValoradas = document.querySelector(".lista-cartelera-peliculas-vistas")
+            peliculasMasValoradas.innerHTML +=
 
                 `<article class="listados">
     <div>
@@ -102,7 +105,7 @@ fetch('https://api.themoviedb.org/3/movie/top_rated?api_key=1caaa22005845643c086
 
 <h3 class="titulos-peliculas"><a href="detail-movie.html?id=${data.results[i].id}" class="a-titulo">${data.results[i].title}</a></h3>
 <p class="generos-texto"><a href="detail-movie.html?id=${data.results[i].id}" class="a-titulo">${data.results[i].release_date}</a></p>
-<p class="generos-texto"><a href="detail-movie.html?id=${data.results[i].id}" class="a-titulo"> Ver más ✓ </a></p>
+<p class="generos-texto"><a href="detail-movie.html?id=${data.results[i].id}" class="a-titulo"> See more ✓ </a></p>
 
 
 </article> `
@@ -120,14 +123,13 @@ fetch('https://api.themoviedb.org/3/movie/upcoming?api_key=1caaa22005845643c0863
 
     .then(function (data) {
         console.log(data)
-        for (let i = 0; i<=1; i++) {
+        for (let i = 0; i<1; i++) {
             console.log(data.results[i]);
-            document.querySelector('section').innerHTML = `
-            <h2 class="h2-proximamente">Próximamente</h2>
+            let proximamente = document.querySelector('section')
+            proximamente.innerHTML = `
+            <h2 class="h2-proximamente">Upcoming</h2>
             <img class="foto-proximamente" src="https://image.tmdb.org/t/p/w342/${data.results[i].poster_path}" alt="${data.results[i].title}">
         `
-
-
 
         }
     })
