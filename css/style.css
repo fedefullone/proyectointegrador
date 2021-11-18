@@ -76,6 +76,7 @@ header {
     padding: 5px 0px 5px 15px;
     background-color: rgb(40, 46, 51);  
     width: 100%;
+
 }
     
 
@@ -93,6 +94,9 @@ height: 200px;
 .titulos-peliculas {
     font-family: 'Urbanist', sans-serif;
     color: white;
+    width: 100%;
+    
+
 }
 .a-titulo, .generos-texto, .a-generos {
     text-decoration: none;
@@ -109,7 +113,7 @@ height: 200px;
 
 .foto-proximamente{
     width: 100%;
-    height: 355px;
+    height: 380px;
 }
 
 /* comienza el footer */

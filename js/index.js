@@ -61,7 +61,9 @@ window.addEventListener("load", function () {
             </div>
 
         <h3 class="titulos-peliculas"><a href="detail-serie.html?id=${data.results[i].id}" class="a-titulo">${data.results[i].name}</a></h3>
+
         <p class="generos-texto"><a href="detail-serie.html?id=${data.results[i].id}" class="a-titulo">${data.results[i].first_air_date}</a></p>
+
     <p class="generos-texto"><a href="detail-serie.html?id=${data.results[i].id}" class="a-titulo"> Ver más ✓ </a></p>
 
 
@@ -118,7 +120,7 @@ fetch('https://api.themoviedb.org/3/movie/upcoming?api_key=1caaa22005845643c0863
 
     .then(function (data) {
         console.log(data)
-        for (let i = 0; i < 5; i++) {
+        for (let i = 0; i<=1; i++) {
             console.log(data.results[i]);
             document.querySelector('section').innerHTML = `
             <h2 class="h2-proximamente">Próximamente</h2>
