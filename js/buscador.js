@@ -45,7 +45,7 @@ window.addEventListener("load", function(){
         if (textoBuscado == "") {
             alert("Debes escribir algo!");
             tieneErrores = true;
-         }else if (textoBuscado.length <= 3){
+         }else if (textoBuscado.length <= 2){
             tieneErrores = true;
             alert("Debes escribir al menos tres caracteres!");
         }

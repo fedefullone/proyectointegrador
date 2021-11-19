@@ -12,11 +12,13 @@ fetch('https://api.themoviedb.org/3/genre/movie/list?api_key=1caaa22005845643c08
 
             document.querySelector(".lista-generos-peliculas").innerHTML +=
 
-                `<article class="listados-generos">
-            <a href="detail-genero-movies.html?id=${data.genres[i].id}"<h2 class="h2-titulos-generos">${data.genres[i].name}</h2></a>
+            `<article class="listados-generos">
+            <h2 class="h2-titulos-generos">
+            <a class="h2-titulos-generos"href="detail-genero-movies.html?id=${data.genres[i].id}">${data.genres[i].name}</a>
+            </h2>
             
         </article>
-            `
+            ` 
 
 
         }
@@ -39,7 +41,9 @@ fetch('https://api.themoviedb.org/3/genre/tv/list?api_key=1caaa22005845643c0863f
             document.querySelector(".lista-generos-series").innerHTML +=
 
                 `<article class="listados-generos">
-        <a href="detail-genero-series.html?id=${data.genres[i].id}"><h2 class="h2-titulos-generos">${data.genres[i].name}</h2></a>
+                <h2 class="h2-titulos-generos">
+            <a class="h2-titulos-generos"href="detail-genero-series.html?id=${data.genres[i].id}">${data.genres[i].name}</a>
+            </h2>
         
     </article>
         `

@@ -125,9 +125,8 @@ fetch('https://api.themoviedb.org/3/movie/upcoming?api_key=1caaa22005845643c0863
         console.log(data)
         for (let i = 0; i<1; i++) {
             console.log(data.results[i]);
-            let proximamente = document.querySelector('section')
+            let proximamente = document.querySelector('.upcoming')
             proximamente.innerHTML = `
-            <h2 class="h2-proximamente">Upcoming</h2>
             <img class="foto-proximamente" src="https://image.tmdb.org/t/p/w342/${data.results[i].poster_path}" alt="${data.results[i].title}">
         `
 

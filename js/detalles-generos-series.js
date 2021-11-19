@@ -41,8 +41,6 @@ window.addEventListener("load", function () {
                 </div>
             
                 <h3 class="titulos-peliculas"> <a href="detail-serie.html?id=${datos.results[i].id}" class="a-titulo">${datos.results[i].name}</a></h3>
-                <p class="generos-texto"> Release date: ${datos.results[i].first_air_date}</p>
-                <p class="generos-texto"><a href="detail-serie.html?id=${datos.results[i].id}" class="a-titulo">See more ✓</a></p>
             
             </article>
                 `

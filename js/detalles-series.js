@@ -23,11 +23,12 @@ fetch('https://api.themoviedb.org/3/tv/'+ id +'?api_key=1caaa22005845643c0863fd9
                <li>Calification: ${data.vote_average}</li>
                <li>Release date: ${data.first_air_date}</li>
                 
-               <li> <a class="a-li-detail-serie"href="detail-accion.html">Género: Acción</a> </li>
+               <li> <a class="a-li-detail-serie"href="detail-accion.html">Género:${data.genres} </a> </li>
                 
                <li>Synopsis: ${data.overview}</li>
-               <li><a class="a-li-detail-movie" href="favoritos.html">♥</a></li>
                 </ul>
+                <h3><a class="boton-favoritos" href="favoritos.html?=${data.id}">Agregar a favoritos ♥ ♥ ♥</a></h3>
+
             
         </article>
  </div>`
