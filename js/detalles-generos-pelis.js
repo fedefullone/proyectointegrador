@@ -1,14 +1,15 @@
-let queryStringObj = new URLSearchParams(location.search);
-let id = queryStringObj.get('id');
+window.addEventListener("load", function () {
+    let queryStringObj = new URLSearchParams(location.search);
+    let id = queryStringObj.get('id');
 
-fetch('https://api.themoviedb.org/3/genre/movie/list?api_key=1caaa22005845643c0863fd9677bc21c&language=en-US') //traigo la lista de generos
+    fetch('https://api.themoviedb.org/3/genre/movie/list?api_key=1caaa22005845643c0863fd9677bc21c&language=en-US') //traigo la lista de generos
 
 
-    .then(function (response) {
-        return response.json();
-    })
+        .then(function (response) {
+            return response.json();
+        })
 
-    .then(function (data) {
+        .then(function (data) {
             let contenedor = document.querySelector('main')
             for (let i = 0; i < data.genres.length; i++) {
                 if (data.genres[i].id == id) {
@@ -47,4 +48,5 @@ fetch('https://api.themoviedb.org/3/genre/movie/list?api_key=1caaa22005845643c08
                 `
                     }
                 })
-            })
+        })
+})

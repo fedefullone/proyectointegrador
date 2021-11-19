@@ -132,4 +132,6 @@ fetch('https://api.themoviedb.org/3/movie/upcoming?api_key=1caaa22005845643c0863
         `
 
         }
-    })
+    }) 
+
+    

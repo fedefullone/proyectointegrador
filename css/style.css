@@ -171,10 +171,15 @@ flex-direction: row;
     color: white;
 }
 
-.a-li-detail-movie {
-    font-weight: 80;
-    color: white;
+
+
+.boton-favoritos{
+    padding: 10px;
+    border: groove white 2px;
+    color: white;   
     text-decoration: none;
+    
+    
 }
 
 
@@ -301,6 +306,8 @@ flex-direction: row;
     font-size: 30px;
     color:white;
     background-color: rgb(142, 156, 94);
+    text-decoration: none;
+    border-style: groove ;
 }
 
 .img-generos{
