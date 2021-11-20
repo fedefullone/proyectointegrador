@@ -187,10 +187,13 @@ flex-direction: row;
     color: white;   
     text-decoration: none;
     margin-left: 20%;
+    cursor: pointer;
     
     
 }
-
+.boton-favoritos:hover{
+    background-color: rgb(61, 70, 77);
+}
 
 /* comienza el css de detail serie */
 
