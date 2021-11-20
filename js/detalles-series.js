@@ -9,6 +9,7 @@ fetch('https://api.themoviedb.org/3/tv/'+ id +'?api_key=1caaa22005845643c0863fd9
 })
 
 .then(function(data){
+    let arrayFavS = [data];
     console.log(data);
     let infoSeries = document.querySelector('section')
     infoSeries.innerHTML = 
@@ -27,7 +28,7 @@ fetch('https://api.themoviedb.org/3/tv/'+ id +'?api_key=1caaa22005845643c0863fd9
                 
                <li>Synopsis: ${data.overview}</li>
                 </ul>
-                <h3><a class="boton-favoritos" href="favoritos.html?=${data.id}">Agregar a favoritos ♥ ♥ ♥</a></h3>
+                <h3><a class="boton-favoritos">Agregar a favoritos ♥ ♥ ♥</a></h3>
 
             
         </article>
@@ -35,3 +36,17 @@ fetch('https://api.themoviedb.org/3/tv/'+ id +'?api_key=1caaa22005845643c0863fd9
     
 
 })
+
+let favS = document.querySelector('.boton-favoritos')
+favS.addEventListener('click', function(){
+    if(window.localStorage.getItem('favoritos')== null){
+    window.localStorage.setItem('favoritos', JSON.stringify(arrayFav))
+    console.log(arrayFavS)
+    } else{
+        let serieObjeto = JSON.parse(window.localStorage.getItem('favoritos'))
+        serieObjeto.push(data)
+        window.localStorage.setItem('favoritos', JSON.stringify(peliculaObjeto))
+        console.log(serieObjeto);
+    }
+})
+

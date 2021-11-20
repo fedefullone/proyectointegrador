@@ -39,20 +39,16 @@ fetch('https://api.themoviedb.org/3/movie/' + id + '?api_key=1caaa22005845643c08
 </div>`
 
         let fav = document.querySelector('.boton-favoritos')
-        fav.addEventListener('click', function(){
-            if(window.localStorage.getItem('favoritos')== null){
-            window.localStorage.setItem('favoritos', JSON.stringify(arrayFav))
-            console.log(arrayFav)
-            } else{
+        fav.addEventListener('click', function () {
+            if (window.localStorage.getItem('favoritos') == null) {
+                window.localStorage.setItem('favoritos', JSON.stringify(arrayFav))
+                console.log(arrayFav)
+            } else {
                 let peliculaObjeto = JSON.parse(window.localStorage.getItem('favoritos'))
                 peliculaObjeto.push(data)
                 window.localStorage.setItem('favoritos', JSON.stringify(peliculaObjeto))
                 console.log(peliculaObjeto);
             }
         })
-       
-    })
 
-    .catch(function (error) {
-        console.log('El error fue: ' + error)
     })
