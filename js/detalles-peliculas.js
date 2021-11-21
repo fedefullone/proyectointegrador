@@ -10,7 +10,6 @@ fetch('https://api.themoviedb.org/3/movie/' + id + '?api_key=1caaa22005845643c08
 
     .then(function (data) {
         console.log(data);
-
         let arrayFav = [data];
         let infoPeliculas = document.querySelector('section');
         console.log(data.genres[1])
