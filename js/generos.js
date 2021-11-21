@@ -14,7 +14,7 @@ fetch('https://api.themoviedb.org/3/genre/movie/list?api_key=1caaa22005845643c08
 
             `<article class="listados-generos">
             <h2 class="h2-titulos-generos">
-            <a class="h2-titulos-generos"href="detail-genero-movies.html?id=${data.genres[i].id}">${data.genres[i].name}</a>
+            <a class="a-h2-titulos-generos"href="detail-genero-movies.html?id=${data.genres[i].id}">${data.genres[i].name}</a>
             </h2>
             
         </article>
@@ -42,7 +42,7 @@ fetch('https://api.themoviedb.org/3/genre/tv/list?api_key=1caaa22005845643c0863f
 
                 `<article class="listados-generos">
                 <h2 class="h2-titulos-generos">
-            <a class="h2-titulos-generos"href="detail-genero-series.html?id=${data.genres[i].id}">${data.genres[i].name}</a>
+            <a class="a-h2-titulos-generos"href="detail-genero-series.html?id=${data.genres[i].id}">${data.genres[i].name}</a>
             </h2>
         
     </article>

@@ -8,32 +8,37 @@
     background-color: rgb(49, 57, 64);
     margin: 0 auto;
 }
-.nav-header{
+
+.nav-header {
     width: 100%;
 }
 
 header {
     background-color: rgb(40, 46, 51);
 }
-.logo{
+
+.logo {
     width: 10%;
 }
-.h1-header{
+
+.h1-header {
     font-family: 'Urbanist', sans-serif;
     color: white;
     align-self: center;
     margin-right: 25%;
-   
+
 }
+
 .menu {
     display: flex;
     justify-content: space-around;
     padding-left: 0%;
     font-family: 'Urbanist', sans-serif;
     text-transform: uppercase;
-   
-   
+
+
 }
+
 .header-index {
     display: flex;
     flex-wrap: wrap;
@@ -44,24 +49,26 @@ header {
     background-color: rgb(42, 47, 51);
     padding: 10px;
     border: groove white 2px;
-    color: white;   
+    color: white;
     text-decoration: none;
 }
+
 .menu li {
     margin: 15px;
     list-style: none;
 }
+
 .buscador {
     text-align: center;
     margin-top: 20px;
-    }
+}
 
 /*Comienza el main*/
 
 .h2-proximamente {
     font-family: 'Urbanist', sans-serif;
     text-transform: uppercase;
-    font-weight: bold ;
+    font-weight: bold;
     font-size: 30px;
     color: rgb(255, 255, 255);
     text-align: center;
@@ -74,44 +81,62 @@ header {
     font-size: 30px;
     color: white;
     padding: 5px 0px 5px 15px;
-    background-color: rgb(40, 46, 51);  
+    background-color: rgb(40, 46, 51);
     width: 100%;
 
 }
-    
+.h2-titulos-favoritos {
+    font-family: 'Urbanist', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+    padding: 5px 0px 5px 15px;
+    background-color: rgb(40, 46, 51);
+    width: 100%;
+
+}
+
 
 .listados {
     padding: 16px;
     margin: 30px;
-    width: 150px!important;
+    width: 150px !important;
 }
 
-.portadas{
-width: 150px;
-height: 200px;
+.portadas {
+    width: 150px;
+    height: 200px;
 }
 
 .titulos-peliculas {
     font-family: 'Urbanist', sans-serif;
     color: white;
     width: 100%;
-    
+
 
 }
-.a-titulo, .generos-texto, .a-generos {
+
+.a-titulo,
+.generos-texto,
+.a-generos {
     text-decoration: none;
     color: white;
 }
 
-.lista-cartelera, .lista-cartelera-series, .lista-cartelera-peliculas-vistas {
+.lista-cartelera,
+.lista-cartelera-series,
+.lista-cartelera-peliculas-vistas,
+.section-favoritos-peliculas,
+.section-favoritos-series  {
     display: flex;
     justify-content: space-around;
     flex-direction: row;
     flex-wrap: wrap;
-    
+
 }
 
-.foto-proximamente{
+.foto-proximamente {
     width: 40%;
     height: 500px;
     display: flex;
@@ -123,6 +148,7 @@ height: 200px;
     justify-content: center;
 
 }
+
 /* comienza el footer */
 
 .footer-index {
@@ -135,19 +161,22 @@ height: 200px;
 
 
 .nombres-footer {
-   display: flex;
-flex-direction: row;
+    display: flex;
+    flex-direction: row;
 }
+
 .logo {
-    width: 10%;   
+    width: 10%;
 }
 
 .logo-db {
     width: 35%;
 }
+
 #texto-footer {
     align-self: center;
 }
+
 /* comienzo del css de detail-movie */
 
 .body-detail-movie {
@@ -156,13 +185,14 @@ flex-direction: row;
     font-family: 'Urbanist', sans-serif;
     color: white;
 }
+
 .h1-detail-movie {
     text-align: center;
     font-weight: bold;
     margin: 50px;
     text-transform: uppercase;
-   
-   
+
+
 }
 
 .section-detail-movie {
@@ -173,25 +203,45 @@ flex-direction: row;
 }
 
 
-.clase-texto-detail-movie{
+.clase-texto-detail-movie {
     font-weight: 80;
     color: white;
 }
 
 
 
-.boton-favoritos, .vaciar-favoritos{
+.boton-favoritos {
     background-color: rgb(42, 47, 51);
     padding: 10px;
     border: groove white 2px;
-    color: white;   
+    color: white;
     text-decoration: none;
     margin-left: 20%;
     cursor: pointer;
-    
-    
+
+
 }
-.boton-favoritos:hover, .vaciar-favoritos:hover {
+
+.vaciar-favoritos {
+    background-color: rgb(42, 47, 51);
+    padding: 10px;
+    border: groove white 2px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    width: 274px;
+    margin-left: 40%;
+    margin-top: 40px;
+
+
+}
+
+.a-vaciar-favoritos {
+    text-decoration: none;
+}
+
+.boton-favoritos:hover,
+.vaciar-favoritos:hover {
     background-color: rgb(61, 70, 77);
 }
 
@@ -199,7 +249,8 @@ flex-direction: row;
 
 .body-detail-serie {
     background-color: rgb(49, 57, 64);
-    margin: 0px;;
+    margin: 0px;
+    ;
     font-family: 'Urbanist', sans-serif;
     color: white;
 }
@@ -219,12 +270,14 @@ flex-direction: row;
 }
 
 
-.clase-texto-detail-serie, .a-li-detail-serie {
+.clase-texto-detail-serie,
+.a-li-detail-serie {
     font-weight: 80;
     color: white;
-    text-decoration: none ;
-    
+    text-decoration: none;
+
 }
+
 .imagen-detail-series {
     height: 368px;
     width: 270px;
@@ -236,6 +289,7 @@ flex-direction: row;
     flex-direction: row;
     margin: 15px 15px 50px 15px;
 }
+
 .texto-busqueda {
     width: 65%;
     margin-left: 30px;
@@ -256,7 +310,7 @@ flex-direction: row;
     text-align: center;
     text-transform: uppercase;
     color: white;
-    background-color:  rgb(40, 46, 51);
+    background-color: rgb(40, 46, 51);
     font-size: 30px;
 }
 
@@ -269,12 +323,14 @@ flex-direction: row;
     color: white;
 }
 
-.section-favoritos {
+/*.section-favoritos-peliculas , .section-favoritos-series {
     display: flex;
     margin: 40px 10px 20px 40px;
     flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
 
-}
+}*/
 
 .h1-favoritos {
     text-align: center;
@@ -283,6 +339,7 @@ flex-direction: row;
     width: 100%;
     font-size: 35px;
 }
+
 .article-favoritos {
     padding: 16px;
     margin: 22px 30px;
@@ -292,18 +349,19 @@ flex-direction: row;
 .img-span {
     width: 100%;
     height: 280px;
-   
+
 }
 
 /* comienza el css de generos */
-    
+
 
 .body-generos {
     background-color: rgb(49, 57, 64);
     margin: 0px;
 }
 
-.lista-generos-peliculas, .lista-generos-series {
+.lista-generos-peliculas,
+.lista-generos-series {
     display: flex;
     justify-content: space-around;
     flex-direction: row;
@@ -316,145 +374,168 @@ flex-direction: row;
     text-transform: uppercase;
     font-weight: bold;
     font-size: 30px;
-    color:white;
     background-color: rgb(142, 156, 94);
+    border-style: ridge;
+
+}
+.a-h2-titulos-generos{
     text-decoration: none;
-    border-style: ridge ;
+    color: white;
 
 }
 
-.img-generos{
+.img-generos {
     width: 100%;
     height: 400px;
 }
+
 .listados-generos {
     padding: 16px;
     margin: 30px;
     width: 20%;
-    
+
 }
 
 
-    .h1-generos {
-        text-decoration: none;
-        font-family: 'Urbanist', sans-serif;
-        text-transform: uppercase;
-        font-weight: bold ;
-        color: rgb(255, 255, 255);
-        text-align: center;
-    }
+.h1-generos {
+    text-decoration: none;
+    font-family: 'Urbanist', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
 
-    .generos-texto {
-        font-family: 'Urbanist', sans-serif;
-        color: white;
-    }
+.generos-texto {
+    font-family: 'Urbanist', sans-serif;
+    color: white;
+}
 
-    /* Comienza el css responsive */
-    
+/* Comienza el css responsive */
+
 @media (max-width:420px) {
 
 
-.listados {
-    width: 48%;
-    margin: 1px;
-    padding: 0px;
-}
-
-.foto-proximamente, .h2-proximamente{
-    display: none;
-}
-
-.a-titulo {
-    font-size: 12px;
-}
-
-.h2-titulos {
-    font-size: 25px;
-    width: 100%;
-}
-
-.menu li {
-    margin: 2%;
-}
-
-.h1-header {
-    font-size: 25px;
-    margin-left: 15px;
-}
-
-.generos-texto, .a-generos {
-    font-size: 10px;
-}
-
-/* Favoritos responsive */
-.section-favoritos {
-    margin: 0%;
-    justify-content: center;
-}
-.article-favoritos {
-    width: 48%;
-    margin: 0%;
-}
-.img-span {
-    height: 200px;
-}
-
-.h1-favoritos {
-    font-size: 25px;
-    margin-left: 5%;
-}
-
-.listados-generos {
-    width: 48%;
-    margin: 0%;
-}
-
-/*Generos responsive*/
-.img-generos{
-    width: 100%;
-    height: 200px;
-}
-.h2-titulos-generos{
-    font-size: 20px;
-
-}
- /*Resultados responsive*/
- .resultados{
-display: block; 
+    .listados {
+        width: 48%;
+        margin: 1px;
+        padding: 0px;
     }
 
-.article-resultados {
-margin-left: 20%;
-}
+    .foto-proximamente,
+    .h2-proximamente {
+        display: none;
+    }
 
-.resultado-texto {
-    margin-left: 10%;
-    margin-bottom: 10%;
-}
-.titulo-resultados {
-    margin-left: 30%;
-}
+    .a-titulo {
+        font-size: 12px;
+    }
 
-/* responsive detalles peliculas */
-.section-detail-movie {
-    display: block;
-}
-.imagen-detail-movie {
-    width: 90%;
-}
-.article-img {
-    margin-left: 30%;
-}
-.articulo-detail-movie {
-    margin-left: 10%;
-    margin-bottom: 10%;
-}
+    .h2-titulos {
+        font-size: 25px;
+        width: 100%;
+    }
 
-/* responsive detalles series */
-.imagen-detail-series {
-    width: 90%;
-    height: 230px;
-}
+    .menu li {
+        margin: 2%;
+    }
+
+    .h1-header {
+        font-size: 25px;
+        margin-left: 15px;
+    }
+
+    .generos-texto,
+    .a-generos {
+        font-size: 10px;
+    }
+
+    /* Favoritos responsive */
+    .section-favoritos {
+        margin: 0%;
+        justify-content: center;
+    }
+
+    .article-favoritos {
+        width: 48%;
+        margin: 0%;
+    }
+
+    .img-span {
+        height: 200px;
+    }
+
+    .h1-favoritos {
+        font-size: 25px;
+        margin-left: 5%;
+    }
+
+    .listados-generos {
+        width: 48%;
+        margin: 0%;
+    }
+
+    .vaciar-favoritos{
+        margin-left: 15%;
+    }
+
+    /*Generos responsive*/
+    .img-generos {
+        width: 100%;
+        height: 200px;
+    }
+
+    .h2-titulos-generos {
+        font-size: 20px;
+
+    }
+    
+
+    /*Resultados responsive*/
+    .resultados {
+        display: block;
+    }
+
+    .article-resultados {
+        margin-left: 20%;
+    }
+
+    .resultado-texto {
+        margin-left: 10%;
+        margin-bottom: 10%;
+    }
+
+    .titulo-resultados {
+        margin-left: 30%;
+    }
+
+    /* responsive detalles peliculas */
+    .section-detail-movie {
+        display: block;
+    }
+
+    .imagen-detail-movie {
+        width: 90%;
+    }
+
+    .article-img {
+        margin-left: 30%;
+    }
+
+    .articulo-detail-movie {
+        margin-left: 10%;
+        margin-bottom: 10%;
+    }
+
+    /* responsive detalles series */
+    .imagen-detail-series {
+        width: 90%;
+        height: 230px;
+    }
+
+    .boton-favoritos{
+        margin-left: 0;
+    }
 
 
 

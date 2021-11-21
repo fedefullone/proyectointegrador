@@ -5,7 +5,7 @@ window.addEventListener("load", function () {
 })
 let listaPelis = window.localStorage.getItem('favoritos')
 let pelis = JSON.parse(listaPelis)
-let contenedorFavoritos = document.querySelector('.section-favoritos')
+let contenedorFavoritos = document.querySelector('.section-favoritos-peliculas')
 for (let i = 0; i < pelis.length; i++) {
     const element = pelis[i];
     contenedorFavoritos.innerHTML += `
@@ -25,38 +25,37 @@ for (let i = 0; i < pelis.length; i++) {
 
 }
 
-let vaciar = document.querySelector('.vaciar-favoritos')
+/*let vaciar = document.querySelector('.vaciar-favoritos')
 vaciar.addEventListener('click', function () {
     window.localStorage.clear('favoritos')
-})
+})*/
 
 // favoritos series
 
 let listaSeries = window.localStorage.getItem('favoritos')
-let series = JSON.parse(listaPelis)
-let contenedorFavSeries = document.querySelector('.section-favoritos')
+let series = JSON.parse(listaSeries)
+let seriesFavoritos = document.querySelector('.section-favoritos-series')
 for (let i = 0; i < series.length; i++) {
-    const seriesFav = series[i];
-    contenedorFavSeries.innerHTML += `
+    const elemento = series[i];
+    seriesFavoritos.innerHTML += `
         <article class="listados">
     <div>
-    <a href="detail-serie.html?id=${seriesFav.id}">
-        <img class="portadas"src="https://image.tmdb.org/t/p/w342/${seriesFav.poster_path}"alt="${seriesFav.name}">
+    <a href="detail-serie.html?id=${elemento.id}">
+        <img class="portadas"src="https://image.tmdb.org/t/p/w342/${elemento.poster_path}"alt="${elemento.name}">
   </a>
         </div>
 
-<h3 class="titulos-peliculas"><a href="detail-serie.html?id=${seriesFav.id}" class="a-titulo">${seriesFav.name}</a></h3>
-<p class="generos-texto"><a href="detail-serie.html?id=${seriesFav.id}" class="a-titulo">${seriesFav.first_air_date}</a></p>
-<p class="generos-texto"><a href="detail-serie.html?id=${seriesFav.id}" class="a-titulo"> See more ✓ </a></p>
+<h3 class="titulos-peliculas"><a href="detail-serie.html?id=${elemento.id}" class="a-titulo">${elemento.name}</a></h3>
+<p class="generos-texto"><a href="detail-serie.html?id=${elemento.id}" class="a-titulo">${elemento.first_air_date}</a></p>
+<p class="generos-texto"><a href="detail-serie.html?id=${elemento.id}" class="a-titulo"> See more ✓ </a></p>
 
 
 </article> `
 
 }
 
-let vaciarSeries = document.querySelector('.vaciar-favoritos')
-vaciarSeries.addEventListener('click', function () {
+let vaciar = document.querySelector('.vaciar-favoritos')
+vaciar.addEventListener('click', function () {
     window.localStorage.clear('favoritos')
-
+    alert("You clear all your favorites!")
 })
-

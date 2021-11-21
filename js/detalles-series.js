@@ -38,16 +38,18 @@ fetch('https://api.themoviedb.org/3/tv/'+ id +'?api_key=1caaa22005845643c0863fd9
 })
 
 
- let favS = document.querySelector('.boton-favoritos') //agarro boton favoritos
-favS.addEventListener('click', function(){ //creo un evento para ese boton
-    if(window.localStorage.getItem('favoritos') == null){ //me fijo que no tenga nada el localstorage de favoritos
-    window.localStorage.setItem('favoritos', JSON.stringify(arrayFav)) //lo paso a un string (cadena de texto)
-    console.log(arrayFav)
-    } else{
-        let serieObjeto = JSON.parse(window.localStorage.getItem('favoritos')) 
-        serieObjeto.push(data) //agrego elemento al array
-        window.localStorage.setItem('favoritos', JSON.stringify(serieObjeto))
-        console.log(serieObjeto);
-    } 
-}) 
+let favSeries = document.querySelector('.boton-favoritos')
+        favSeries.addEventListener('click', function () {
+            if (window.localStorage.getItem('favoritos') == null) {
+                window.localStorage.setItem('favoritos', JSON.stringify(arrayFav))
+                console.log(arrayFav)
+            } else {
+                let seriesObjeto = JSON.parse(window.localStorage.getItem('favoritos'))
+                seriesObjeto.push(data)
+                window.localStorage.setItem('favoritos', JSON.stringify(seriesObjeto))
+                console.log(seriesObjeto);
+            }
+        })
+
+    
 
