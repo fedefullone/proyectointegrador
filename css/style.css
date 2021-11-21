@@ -180,7 +180,7 @@ flex-direction: row;
 
 
 
-.boton-favoritos{
+.boton-favoritos, .vaciar-favoritos{
     background-color: rgb(42, 47, 51);
     padding: 10px;
     border: groove white 2px;
@@ -191,7 +191,7 @@ flex-direction: row;
     
     
 }
-.boton-favoritos:hover{
+.boton-favoritos:hover, .vaciar-favoritos:hover {
     background-color: rgb(61, 70, 77);
 }
 

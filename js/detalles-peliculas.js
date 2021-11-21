@@ -27,12 +27,12 @@ fetch('https://api.themoviedb.org/3/movie/' + id + '?api_key=1caaa22005845643c08
               <li>Release date: ${data.release_date}
               <li>Duration: ${data.runtime} minutes</li>
               <li>
-                   <a class="a-li-detail-serie"href="detail-accion.html">Género: ${data.genres[1].name}</a>
+                   <a class="a-li-detail-serie">Genre: ${data.genres[1].name}</a>
                </li>
               <li>Synopsis: ${data.overview}</li>
             
                </ul>
-               <h3><a class="boton-favoritos">Agregar a favoritos ♥ ♥ ♥</a></h3>
+               <h3><a class="boton-favoritos">Add to favorites ♥ ♥ ♥</a></h3>
              
        </article>
    

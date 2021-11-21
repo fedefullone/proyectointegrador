@@ -9,7 +9,7 @@ fetch('https://api.themoviedb.org/3/tv/'+ id +'?api_key=1caaa22005845643c0863fd9
 })
 
 .then(function(data){
-    let arrayFavS = [data];
+    let arrayFav = [data];
     console.log(data);
     let infoSeries = document.querySelector('section')
     infoSeries.innerHTML = 
@@ -24,11 +24,11 @@ fetch('https://api.themoviedb.org/3/tv/'+ id +'?api_key=1caaa22005845643c0863fd9
                <li>Calification: ${data.vote_average}</li>
                <li>Release date: ${data.first_air_date}</li>
                 
-               <li> <a class="a-li-detail-serie"href="detail-accion.html">Género:${data.genres} </a> </li>
+               <li> <a class="a-li-detail-serie">Genre:${data.genres[0].name} </a> </li>
                 
                <li>Synopsis: ${data.overview}</li>
                 </ul>
-                <h3><a class="boton-favoritos">Agregar a favoritos ♥ ♥ ♥</a></h3>
+                <h3><a class="boton-favoritos">Add to favorites ♥ ♥ ♥</a></h3>
 
             
         </article>
@@ -37,16 +37,17 @@ fetch('https://api.themoviedb.org/3/tv/'+ id +'?api_key=1caaa22005845643c0863fd9
 
 })
 
-let favS = document.querySelector('.boton-favoritos')
-favS.addEventListener('click', function(){
-    if(window.localStorage.getItem('favoritos')== null){
-    window.localStorage.setItem('favoritos', JSON.stringify(arrayFav))
-    console.log(arrayFavS)
+
+ let favS = document.querySelector('.boton-favoritos') //agarro boton favoritos
+favS.addEventListener('click', function(){ //creo un evento para ese boton
+    if(window.localStorage.getItem('favoritos') == null){ //me fijo que no tenga nada el localstorage de favoritos
+    window.localStorage.setItem('favoritos', JSON.stringify(arrayFav)) //lo paso a un string (cadena de texto)
+    console.log(arrayFav)
     } else{
-        let serieObjeto = JSON.parse(window.localStorage.getItem('favoritos'))
-        serieObjeto.push(data)
-        window.localStorage.setItem('favoritos', JSON.stringify(peliculaObjeto))
+        let serieObjeto = JSON.parse(window.localStorage.getItem('favoritos')) 
+        serieObjeto.push(data) //agrego elemento al array
+        window.localStorage.setItem('favoritos', JSON.stringify(serieObjeto))
         console.log(serieObjeto);
-    }
-})
+    } 
+}) 
 
