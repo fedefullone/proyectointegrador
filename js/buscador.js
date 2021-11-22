@@ -2,10 +2,8 @@ window.addEventListener("load", function(){
 
     let queryString = location.search;
     let busqueda = new URLSearchParams(queryString) 
-    let buscar = busqueda.get('buscar') 
-    let resultado = document.querySelector('buscar')
-    
-    
+    let buscar = busqueda.get('busqueda') 
+        
    
     let url = `https://api.themoviedb.org/3/search/movie?api_key=b8041f10f73b7178ac9637ccbb409920&query=${buscar}`
     
@@ -18,21 +16,24 @@ window.addEventListener("load", function(){
     .then (function(data){
     console.log (data)
     let dataPeliculas = data.results
-    let pelis = document.querySelector("")
+    
     let contenido = ``
     for (let i=0; i< dataPeliculas.length; i++){
-       document.querySelector(".corazondeleon").innerHTML += `  <article>
-    <img src="https://image.tmdb.org/t/p/w342/${dataPeliculas[i].poster_path}" alt="${dataPeliculas[i].title}">
+       document.querySelector("#results-movies").innerHTML += `  <article class="listados">
+       <a href="detail-movie.html?id=${data.results[i].id}">
+    <img src="https://image.tmdb.org/t/p/w342/${dataPeliculas[i].poster_path}" alt="${dataPeliculas[i].title}" class="portadas">   
+    <h3  class="titulos-peliculas"> ${dataPeliculas[i].title} </h3>
+    </a>
+    <pclass="generos-texto"> ${dataPeliculas[i].release_date}</p>
     
-    <h3> ${dataPeliculas[i].title} </h3>
-    <p> ${dataPeliculas[i].release_date}</p>
-    
-    <a href="detallepeliculas.html?id=${dataPeliculas[i].id}">Detalle</a>
+    <a href="detail-movie.html?id=${dataPeliculas[i].id}" class="titulo-resultados">Detalle</a>
     
     
     </article>  `
     
     }})
+
+   
     
     
     let url1 = `https://api.themoviedb.org/3/search/tv?api_key=b8041f10f73b7178ac9637ccbb409920&query=${buscar}`
@@ -46,15 +47,15 @@ window.addEventListener("load", function(){
     .then (function(data){
     console.log (data)
     let dataSeries = data.results
-    let series = document.querySelector(".")
     let contenido = ``
     for (let i=0; i< dataSeries.length; i++){
-       document.querySelector(".corazondeleon").innerHTML +=  ` <article>
-       <img src="https://image.tmdb.org/t/p/w342/${dataSeries[i].poster_path}" alt="${dataSeries[i].name}">
-    
-       <h3> ${dataSeries[i].name} </h3>
-       <p> ${dataSeries[i].first_air_date}</p>
-       <a href="detalle.html?id=${dataSeries[i].id}"> Detalle</a>
+       document.querySelector("#results-series").innerHTML +=  ` <article class="listados">
+       <a href="detail-serie.html?id=${data.results[i].id}">
+       <img src="https://image.tmdb.org/t/p/w342/${dataSeries[i].poster_path}" alt="${dataSeries[i].name}" class="portadas">
+       <h3 class="titulos-peliculas"> ${dataSeries[i].name} </h3>
+       </a>
+       <p class="generos-texto"> ${dataSeries[i].first_air_date}</p>
+       <a href="detail-serie.html?id=${dataSeries[i].id}" class="titulo-resultados"> Detalle</a>
     
     
     
@@ -62,8 +63,8 @@ window.addEventListener("load", function(){
     </article>  `
     
     }})
-  
-  
+    
+ 
 document.getElementById("form-busqueda").addEventListener("submit", function(e){
     e.preventDefault();
     let textoBuscado = document.getElementById("busqueda-text").value;
