@@ -24,7 +24,8 @@ fetch('https://api.themoviedb.org/3/tv/' + idS + '?api_key=1caaa22005845643c0863
                <li>Calification: ${data.vote_average}</li>
                <li>Release date: ${data.first_air_date}</li>
                 
-               <li> <a class="a-li-detail-serie">Genre: ${data.genres[0].name} </a> </li>
+               <li> 
+               <a class="a-li-detail-serie" href="detail-genero-series.html ?id=${data.genres[0].id}">  Genre: ${data.genres[0].name} </a> </li>
                 
                <li>Synopsis: ${data.overview}</li>
                 </ul>
@@ -57,7 +58,7 @@ fetch('https://api.themoviedb.org/3/tv/' + idS + '?api_key=1caaa22005845643c0863
                 let eliminar = favSeries.indexOf(idS);
                 favSeries.splice(eliminar, 1);
                 fav.innerHTML = `
-        <h3 class= "texto-boton" ><a class="boton-favoritos">Add to favorites ♥ ♥ ♥</a></h3>
+        <h3 class= "boton-favoritos" ><a class="texto-boton">Add to favorites ♥ ♥ ♥</a></h3>
         `
             } else {
                 favSeries.push(idS);
@@ -65,6 +66,6 @@ fetch('https://api.themoviedb.org/3/tv/' + idS + '?api_key=1caaa22005845643c0863
         <h3 class= "texto-boton" ><a class="boton-favoritos"> Remove from favorites </a></h3>
         `
             }
-
+            
         })
     })

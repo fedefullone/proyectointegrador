@@ -20,11 +20,11 @@ window.addEventListener("load", function(){
     let contenido = ``
     for (let i=0; i< dataPeliculas.length; i++){
        document.querySelector("#results-movies").innerHTML += `  <article class="listados">
-       <a href="detail-movie.html?id=${data.results[i].id}">
+       <a class="titulos-peliculas" href="detail-movie.html?id=${data.results[i].id}">
     <img src="https://image.tmdb.org/t/p/w342/${dataPeliculas[i].poster_path}" alt="${dataPeliculas[i].title}" class="portadas">   
     <h3  class="titulos-peliculas"> ${dataPeliculas[i].title} </h3>
     </a>
-    <pclass="generos-texto"> ${dataPeliculas[i].release_date}</p>
+    <p class="titulo-resultados"> ${dataPeliculas[i].release_date}</p>
     
     <a href="detail-movie.html?id=${dataPeliculas[i].id}" class="titulo-resultados">Detalle</a>
     
@@ -50,7 +50,7 @@ window.addEventListener("load", function(){
     let contenido = ``
     for (let i=0; i< dataSeries.length; i++){
        document.querySelector("#results-series").innerHTML +=  ` <article class="listados">
-       <a href="detail-serie.html?id=${data.results[i].id}">
+       <a class="titulos-peliculas" href="detail-serie.html?id=${data.results[i].id}">
        <img src="https://image.tmdb.org/t/p/w342/${dataSeries[i].poster_path}" alt="${dataSeries[i].name}" class="portadas">
        <h3 class="titulos-peliculas"> ${dataSeries[i].name} </h3>
        </a>
