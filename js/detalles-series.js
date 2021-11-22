@@ -1,15 +1,15 @@
+console.log(location.search)
 let queryStringObjS = new URLSearchParams(location.search);
-let id = queryStringObjS.get('id');
-console.log(id);
+let idS = queryStringObjS.get('id');
+console.log(idS);
 
-fetch('https://api.themoviedb.org/3/tv/'+ id +'?api_key=1caaa22005845643c0863fd9677bc21c')
+fetch('https://api.themoviedb.org/3/tv/'+ idS +'?api_key=1caaa22005845643c0863fd9677bc21c')
 
 .then(function(response){
     return response.json()
 })
 
 .then(function(data){
-    let arrayFav = [data];
     console.log(data);
     let infoSeries = document.querySelector('section')
     infoSeries.innerHTML = 
@@ -24,32 +24,57 @@ fetch('https://api.themoviedb.org/3/tv/'+ id +'?api_key=1caaa22005845643c0863fd9
                <li>Calification: ${data.vote_average}</li>
                <li>Release date: ${data.first_air_date}</li>
                 
-               <li> <a class="a-li-detail-serie">Genre:${data.genres[0].name} </a> </li>
+               <li> <a class="a-li-detail-serie">Genre: ${data.genres[0].name} </a> </li>
                 
                <li>Synopsis: ${data.overview}</li>
                 </ul>
-                <h3><a class="boton-favoritos">Add to favorites ♥ ♥ ♥</a></h3>
+                <h3 class= "texto-boton" ><a class="boton-favoritos">Add to favorites ♥ ♥ ♥</a></h3>
+                <h3 class= "texto-boton" ><a class="boton-favoritos"> Remove from favorites </a></h3>
+
 
             
         </article>
  </div>`
     
+})
+
+// comienza el favoritos de series
+
+let fav = document.querySelector('.boton-favoritos');
+let favSeries = [];
+let agarroStorage = localStorage.getItem('favoritos');
+if(agarroStorage && agarroStorage != null){
+    favSeries = JSON.parse(agarroStorage);
+}
+console.log(favSeries);
+
+if (favSeries.includes(idS)){
+    fav.innerHTML = `
+    <h3 class= "texto-boton" ><a class="boton-favoritos"> Remove from favorites </a></h3>
+    `
+}
+
+fav.addEventListener('click', function(e){
+    e.preventDefault();
+
+    if(favSeries.includes(idS)){
+        let eliminar = favSeries.indexOf(idS);
+        favSeries.splice(eliminar, 1);
+        fav.innerHTML = `
+        <h3 class= "texto-boton" ><a class="boton-favoritos">Add to favorites ♥ ♥ ♥</a></h3>
+        `
+    } else {
+        favSeries.push(idS);
+        fav.innerHTML = `
+        <h3 class= "texto-boton" ><a class="boton-favoritos"> Remove from favorites </a></h3>
+        `
+    }
 
 })
 
 
-let favSeries = document.querySelector('.boton-favoritos')
-        favSeries.addEventListener('click', function () {
-            if (window.localStorage.getItem('favoritos') == null) {
-                window.localStorage.setItem('favoritos', JSON.stringify(arrayFav))
-                console.log(arrayFav)
-            } else {
-                let seriesObjeto = JSON.parse(window.localStorage.getItem('favoritos'))
-                seriesObjeto.push(data)
-                window.localStorage.setItem('favoritos', JSON.stringify(seriesObjeto))
-                console.log(seriesObjeto);
-            }
-        })
+
+
 
     
 

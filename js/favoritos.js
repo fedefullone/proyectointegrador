@@ -3,7 +3,7 @@ window.addEventListener("load", function () {
 
 
 })
-let listaPelis = window.localStorage.getItem('favoritos')
+/*let listaPelis = window.localStorage.getItem('favoritos')
 let pelis = JSON.parse(listaPelis)
 let contenedorFavoritos = document.querySelector('.section-favoritos-peliculas')
 for (let i = 0; i < pelis.length; i++) {
@@ -30,9 +30,9 @@ vaciar.addEventListener('click', function () {
     window.localStorage.clear('favoritos')
 })*/
 
-// favoritos series
 
-let listaSeries = window.localStorage.getItem('favoritos')
+
+/*let listaSeries = window.localStorage.getItem('favoritos')
 let series = JSON.parse(listaSeries)
 let seriesFavoritos = document.querySelector('.section-favoritos-series')
 for (let i = 0; i < series.length; i++) {
@@ -58,4 +58,5 @@ let vaciar = document.querySelector('.vaciar-favoritos')
 vaciar.addEventListener('click', function () {
     window.localStorage.clear('favoritos')
     alert("You clear all your favorites!")
-})
+}) */
+

@@ -10,7 +10,6 @@ fetch('https://api.themoviedb.org/3/movie/' + id + '?api_key=1caaa22005845643c08
 
     .then(function (data) {
         console.log(data);
-        let arrayFav = [data];
         let infoPeliculas = document.querySelector('section');
         console.log(data.genres[1])
         infoPeliculas.innerHTML =
@@ -31,28 +30,56 @@ fetch('https://api.themoviedb.org/3/movie/' + id + '?api_key=1caaa22005845643c08
               <li>Synopsis: ${data.overview}</li>
             
                </ul>
-               <h3 class= "texto-boton" ><a class="boton-favoritos">Agregar a favoritos ♥ ♥ ♥</a></h3>
+               <h3 class= "texto-boton" ><a class="boton-favoritos">Add to favorites ♥ ♥ ♥</a></h3>
+              
              
        </article>
    
 </div>`
 
-        let fav = document.querySelector('.boton-favoritos')
-        fav.addEventListener('click', function(){
-            if(window.localStorage.getItem('favoritos')== null){
-            window.localStorage.setItem('favoritos', JSON.stringify(arrayFav))
-            console.log(arrayFav)
-            } else{
-                let peliculaObjeto = JSON.parse(window.localStorage.getItem('favoritos'))
-                peliculaObjeto.push(data)
-                window.localStorage.setItem('favoritos', JSON.stringify(peliculaObjeto))
-                console.log(peliculaObjeto);
-            }
-            alert("You added this movie to favorites!");
-        })
-       
-    })
+// comienza la pagina de favoritos de peliculas
 
-    .catch(function (error) {
-        console.log('El error fue: ' + error)
-    })
+// selecciono el boton
+let favoritos = document.querySelector ('.boton-favoritos');
+let favPelis = [];
+let traigoStorage = localStorage.getItem('favoritos');
+if (traigoStorage && traigoStorage != null) {
+    favPelis = JSON.parse(traigoStorage); // aca convierto de string en json a objeto literal para poder trabajarlo
+
+}
+console.log(favPelis);
+
+if (favPelis.includes(id)) {
+    favoritos.innerHTML = `
+    <h3 class= "texto-boton" ><a class="boton-favoritos"> Remove from favorites </a></h3>
+    `
+}//utilizo includes para saber si lo que busco esta o no dentro del array
+
+favoritos.addEventListener('click', function(e){ 
+    e.preventDefault();
+
+    if (favPelis.includes(id)){
+        let borrar = favPelis.indexOf(id);
+        favPelis.splice(borrar, 1) // borra elementos existentes en el array
+        favoritos.innerHTML = `
+        <h3 class= "texto-boton" ><a class="boton-favoritos">Add to favorites ♥ ♥ ♥</a></h3>
+        `
+    } else {
+        favPelis.push(id)
+        favoritos.innerHTML = `
+        <h3 class= "texto-boton" ><a class="boton-favoritos"> Remove from favorites </a></h3>
+        `
+    }
+
+    let pelisStorage = JSON.stringify(favPelis); //tomo mi objeto literal y lo transformo a un string en json
+    localStorage.setItem('favoritos', pelisStorage)
+
+
+
+})
+})
+
+       
+    
+
+   
