@@ -1,6 +1,6 @@
 console.log(location.search)
 let queryStringObjS = new URLSearchParams(location.search);
-let idS = queryStringObjS.get('idS');
+let idS = queryStringObjS.get('id');
 console.log(idS);
 
 fetch('https://api.themoviedb.org/3/tv/' + idS + '?api_key=1caaa22005845643c0863fd9677bc21c')
