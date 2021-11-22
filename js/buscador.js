@@ -1,58 +1,87 @@
-
 window.addEventListener("load", function(){
 
     let queryString = location.search;
-    let queryStringObj = new URLSearchParams(queryString);
-    let resultadoDeBusqueda = queryStringObj.get("busqueda");
+    let busqueda = new URLSearchParams(queryString) 
+    let buscar = busqueda.get('buscar') 
+    let resultado = document.querySelector('buscar')
     
-    if (resultadoDeBusqueda != null) {
-        fetch(`https://api.themoviedb.org/3/search/movie}`)
-            .then(function (response){
-                return response.json();
-            })
-            .then (function(data){
-                console.log(data);
-                document.querySelector('.resultado').innerHTML = `
-                
-                <div>
-                <img class="portadas" src="https://image.tmdb.org/t/p/w342/${datos.results[i].poster_path}" alt="${datos.results[i].title}">
-                <ul>
-                    <li>
-                    <a ><h1>Movies</h1></a>
-                    </li> 
-                    
-                    <li>
-                    <a href="detail-serie.html?id=${data.results[i].id}">
-                    </li>
-                </ul> 
-            </div>
-                `;
-            })
+    
+   
+    let url = `https://api.themoviedb.org/3/search/movie?api_key=b8041f10f73b7178ac9637ccbb409920&query=${buscar}`
+    
+    fetch (url)
+    .then (function (response){
+     return response.json();
+    
+    })
+    
+    .then (function(data){
+    console.log (data)
+    let dataPeliculas = data.results
+    let pelis = document.querySelector("")
+    let contenido = ``
+    for (let i=0; i< dataPeliculas.length; i++){
+       document.querySelector(".corazondeleon").innerHTML += `  <article>
+    <img src="https://image.tmdb.org/t/p/w342/${dataPeliculas[i].poster_path}" alt="${dataPeliculas[i].title}">
+    
+    <h3> ${dataPeliculas[i].title} </h3>
+    <p> ${dataPeliculas[i].release_date}</p>
+    
+    <a href="detallepeliculas.html?id=${dataPeliculas[i].id}">Detalle</a>
+    
+    
+    </article>  `
+    
+    }})
+    
+    
+    let url1 = `https://api.themoviedb.org/3/search/tv?api_key=b8041f10f73b7178ac9637ccbb409920&query=${buscar}`
+    
+    fetch (url1)
+    .then (function (response){
+     return response.json();
+    
+    })
+    
+    .then (function(data){
+    console.log (data)
+    let dataSeries = data.results
+    let series = document.querySelector(".")
+    let contenido = ``
+    for (let i=0; i< dataSeries.length; i++){
+       document.querySelector(".corazondeleon").innerHTML +=  ` <article>
+       <img src="https://image.tmdb.org/t/p/w342/${dataSeries[i].poster_path}" alt="${dataSeries[i].name}">
+    
+       <h3> ${dataSeries[i].name} </h3>
+       <p> ${dataSeries[i].first_air_date}</p>
+       <a href="detalle.html?id=${dataSeries[i].id}"> Detalle</a>
+    
+    
+    
+       
+    </article>  `
+    
+    }})
+  
+  
+document.getElementById("form-busqueda").addEventListener("submit", function(e){
+    e.preventDefault();
+    let textoBuscado = document.getElementById("busqueda-text").value;
+    let tieneErrores = false;
 
-
-            .catch(function(error){
-                console.log("el error es:" + error)
-            })
-
-           
+    if (textoBuscado == "") {
+        alert("Debes escribir algo!");
+        tieneErrores = true;
+     }else if (textoBuscado.length <= 2){
+        tieneErrores = true;
+        alert("Debes escribir al menos tres caracteres!");
     }
+    
+    if(!tieneErrores){
+        this.submit();
+    }
+    
+});
      
-    document.getElementById("form-busqueda").addEventListener("submit", function(e){
-        e.preventDefault();
-        let textoBuscado = document.getElementById("busqueda-text").value;
-        let tieneErrores = false;
-
-        if (textoBuscado == "") {
-            alert("Debes escribir algo!");
-            tieneErrores = true;
-         }else if (textoBuscado.length <= 2){
-            tieneErrores = true;
-            alert("Debes escribir al menos tres caracteres!");
-        }
-        
-        if(!tieneErrores){
-            this.submit();
-        }
-        
-    });
+   
 });
