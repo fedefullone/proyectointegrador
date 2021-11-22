@@ -1,7 +1,22 @@
 // favoritos peliculas
 window.addEventListener("load", function () {
+let favPelis = []; //este es mi array de peliculas favoritas
 
+if (localStorage.getItem("favoritos")){ // pongo la condicion de que si fue creada la lista favoritos 
+let agarroStorage = localStorage.getItem('favoritos'); //guardo datos del storage
+favPelis = JSON.parse(agarroStorage); //transformo el string en formato json a obejto literal
 
+}
+console.log(favPelis);
+
+let seccionFavoritos = document.querySelector('.section-favoritos-peliculas') //selecciono la section donde estan las peliculas favoritas
+
+if(favPelis.length ==0){
+    seccionFavoritos.innerHTML += `
+    <h3>No movies in your favorite list</h3>
+    <h4> <a href="index.html">Go back<h4>
+    `
+}
 })
 /*let listaPelis = window.localStorage.getItem('favoritos')
 let pelis = JSON.parse(listaPelis)
