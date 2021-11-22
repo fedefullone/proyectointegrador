@@ -31,7 +31,7 @@ fetch('https://api.themoviedb.org/3/movie/' + id + '?api_key=1caaa22005845643c08
               <li>Synopsis: ${data.overview}</li>
             
                </ul>
-               <h3><a class="boton-favoritos">Agregar a favoritos ♥ ♥ ♥</a></h3>
+               <h3 class= "texto-boton" ><a class="boton-favoritos">Agregar a favoritos ♥ ♥ ♥</a></h3>
              
        </article>
    

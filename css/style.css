@@ -240,6 +240,10 @@ header {
     text-decoration: none;
 }
 
+.texto-boton {
+    width:100%;
+}
+
 .boton-favoritos:hover,
 .vaciar-favoritos:hover {
     background-color: rgb(61, 70, 77);
@@ -512,6 +516,7 @@ header {
     /* responsive detalles peliculas */
     .section-detail-movie {
         display: block;
+        width: 70%;
     }
 
     .imagen-detail-movie {
@@ -519,7 +524,7 @@ header {
     }
 
     .article-img {
-        margin-left: 30%;
+        margin-left: 25%;
     }
 
     .articulo-detail-movie {

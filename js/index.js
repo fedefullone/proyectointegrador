@@ -15,7 +15,7 @@ window.addEventListener("load", function () {
 
         //una vez recibidos los datos trabajo con ellos
         .then(function (data) {
-            for (let i = 0; i < 5; i++) {
+            for (let i = 0; i < 12; i++) {
                 console.log(data.results[i]);
 
             let peliculasPopulares = document.querySelector(".lista-cartelera")
@@ -49,7 +49,7 @@ window.addEventListener("load", function () {
 
         //una vez recibidos los datos trabajo con ellos
         .then(function (data) {
-            for (let i = 0; i < 5; i++) {
+            for (let i = 0; i < 12; i++) {
                 console.log(data.results[i]);
 
                 let seriesPopulares = document.querySelector(".lista-cartelera-series")
@@ -90,7 +90,7 @@ fetch('https://api.themoviedb.org/3/movie/top_rated?api_key=1caaa22005845643c086
 
     //una vez recibidos los datos trabajo con ellos
     .then(function (data) {
-        for (let i = 0; i < 5; i++) {
+        for (let i = 0; i < 12; i++) {
             console.log(data.results[i]);
 
             let peliculasMasValoradas = document.querySelector(".lista-cartelera-peliculas-vistas")
