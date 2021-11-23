@@ -39,7 +39,7 @@ fetch('https://api.themoviedb.org/3/tv/' + idS + '?api_key=1caaa22005845643c0863
 
         let fav = document.querySelector('.boton-favoritos');
         let favSeries = [];
-        let agarroStorage = localStorage.getItem('favoritos');
+        let agarroStorage = localStorage.getItem('favoritosSeries');
         if (agarroStorage && agarroStorage != null) {
             favSeries = JSON.parse(agarroStorage);
         }
@@ -66,6 +66,7 @@ fetch('https://api.themoviedb.org/3/tv/' + idS + '?api_key=1caaa22005845643c0863
         <h3 class= "texto-boton" ><a class="boton-favoritos"> Remove from favorites </a></h3>
         `
             }
-            
+            let pelisStorage = JSON.stringify(favSeries); //tomo mi objeto literal y lo transformo a un string en json
+            localStorage.setItem('favoritosSeries', pelisStorage)
         })
     })
