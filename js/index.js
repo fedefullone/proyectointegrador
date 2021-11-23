@@ -37,6 +37,9 @@ window.addEventListener("load", function () {
 
             }
         })
+        .catch(function (error) {
+            console.log('El error fué: ' + error);
+        })
 
     // fetch para series populares
 
@@ -74,9 +77,11 @@ window.addEventListener("load", function () {
             }
 
         })
+        .catch(function (error) {
+            console.log('El error fué: ' + error);
+        })
 
-}
-)
+
 
 // fetch para lo mas visto en peliculas
 
@@ -112,6 +117,9 @@ fetch('https://api.themoviedb.org/3/movie/top_rated?api_key=1caaa22005845643c086
 
         }
     })
+    .catch(function (error) {
+        console.log('El error fué: ' + error);
+    })
 
 //fetch para proximamente
 
@@ -133,4 +141,9 @@ fetch('https://api.themoviedb.org/3/movie/upcoming?api_key=1caaa22005845643c0863
         }
     }) 
 
-    
+    .catch(function (error) {
+        console.log('El error fué: ' + error);
+    })
+
+}
+) 

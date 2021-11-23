@@ -1,3 +1,4 @@
+window.addEventListener("load", function () {
 // fetch para generos de  peliculas
 
 fetch('https://api.themoviedb.org/3/genre/movie/list?api_key=1caaa22005845643c0863fd9677bc21c&language=en-US')
@@ -22,6 +23,10 @@ fetch('https://api.themoviedb.org/3/genre/movie/list?api_key=1caaa22005845643c08
 
 
         }
+    })
+
+    .catch(function (error) {
+        console.log('El error fué: ' + error);
     })
 
 // fetch para generos de  series
@@ -51,3 +56,8 @@ fetch('https://api.themoviedb.org/3/genre/tv/list?api_key=1caaa22005845643c0863f
 
         }
     })
+    .catch(function (error) {
+        console.log('El error fué: ' + error);
+    })
+
+})

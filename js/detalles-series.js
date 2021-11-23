@@ -1,3 +1,4 @@
+window.addEventListener("load", function () {
 console.log(location.search)
 let queryStringObjS = new URLSearchParams(location.search);
 let idS = queryStringObjS.get('id');
@@ -70,3 +71,8 @@ fetch('https://api.themoviedb.org/3/tv/' + idS + '?api_key=1caaa22005845643c0863
             localStorage.setItem('favoritosSeries', pelisStorage)
         })
     })
+    .catch(function (error) {
+        console.log('El error fué: ' + error);
+    })
+
+})

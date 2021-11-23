@@ -1,3 +1,4 @@
+window.addEventListener("load", function () {
 let queryStringObj = new URLSearchParams(location.search);
 let id = queryStringObj.get('id');
 
@@ -81,3 +82,5 @@ fetch('https://api.themoviedb.org/3/movie/' + id + '?api_key=1caaa22005845643c08
                 console.log('El error fué: ' + error);
             })
     })
+
+})
